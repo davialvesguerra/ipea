@@ -1,0 +1,36 @@
+O futuro da pesquisa científica impulsionado pela IA.
+
+Em um mundo onde o processo científico sofre transformações
+significativas a cada nova tecnologia apresentada, é preciso
+entender como a Inteligência Artificial (IA) interfere,
+devido a sua vasta aplicabilidade em diversas áreas, 
+inclusive no campo acadêmico.
+
+A construção da ciência pode ser observada desde a Grécia 
+Antiga, mas foi com Renê Descartes, com a criação do 
+método científico, que ela adquiriu seu formato recente.
+No entanto, a fácil implementação desse método é deteriorada
+devido ao gasto exaustivo em, por exemplo, procurar referências
+para a pesquisa, ou até mesmo o entendimento de determinado
+assunto desenvolvido por algum especialista no área.
+
+Por isso, existem soluções como o ChatGPT, desenvolvido 
+pela empresa OpenAI, que permite o fácil acesso a essa
+informação, pois são algoritmos treinados, baseados 
+em diversos artigos e metodologia científicas já criadas,
+favorecendo um resultado comprimido da informação desejada.
+
+Entretanto, é preciso tomar uma série de cuidados. Usuários
+já relataram que algumas das informações geradas não são
+verdadeiras, seja por o algoritmo ter errado em sugerir
+a informação ou até mesmo por ele ter criado ela. Por isso
+é sempre importante verificar as informações geradas, para
+evitar futuros transtornos.
+
+Com isso, é possível perceber os impactos que a IA pode 
+gerar nas pesquisas científicas. Soluções de ChatBot
+inteligente podem acelerar as pesquisas acadêmicas, gerando 
+resultados simplificados e rápidos, mas que podem 
+ter erros contidos na resposta, cabendo a prudência
+e o correto dissernimento do usuário em utilizar 
+de forma adequada essa tecnologia.

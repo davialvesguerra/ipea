@@ -1,0 +1,11 @@
+# as medidas estão em dolar.
+
+0.01 por 1 requisicao e 1 resposta;
+5 dolares disponíveis
+isso dá 500 perguntas por 5 dolares(25 reais)
+
+
+250(180,699) requisições e respostas foram equivalentes a 25 reais 
+
+para fazer 20 perguntas para cada subtópico, vai ser necessário
+1460 requisições o que será equivalente a 146 reais

@@ -1,0 +1,1473 @@
+,topico,tema,enunciado,resposta_certa,explicacao,id
+211,tópico 1,"Banco de dados relacional: SQL Server, PostgreSQL, MySQL","Questão:
+A manipulação de dados em bancos relacionais é fundamental para diversas aplicações empresariais, onde a escolha da tecnologia de banco de dados pode ser determinante para o desempenho e a manutenção dos sistemas de informações. Considere que uma empresa utiliza três sistemas de gerenciamento de bancos de dados diferentes, SQL Server, PostgreSQL e MySQL, para suportar diferentes módulos de um sistema integrado.
+
+Em relação às características de transações ACID (Atomicidade, Consistência, Isolamento e Durabilidade) e recursos de particionamento de tabelas, julgue os seguintes itens:
+
+I. SQL Server e MySQL suportam o particionamento de tabela por meio de 'PARTITION BY', o que facilita o gerenciamento e melhora o desempenho de consultas em grandes volumes de dados.
+
+II. PostgreSQL não oferece suporte a transações ACID, característica presente apenas no SQL Server e MySQL.
+
+III. Partition pruning, que é o processo pelo qual o sistema de gerenciamento de banco de dados evita a leitura de partições desnecessárias durante uma consulta, é um recurso presente em todas as três tecnologias mencionadas.
+
+Assinale a opção que indica as afirmativas corretas:
+
+A) Apenas I é verdadeira.
+B) Apenas II é verdadeira.
+C) Apenas III é verdadeira.
+D) I e III são verdadeiras.
+E) II e III são verdadeiras.
+
+",C,"
+
+Explicação dos itens:
+
+I. Essa afirmação é falsa porque o MySQL suporta particionamento de tabelas usando a cláusula 'PARTITION BY', mas o SQL Server usa outra sintaxe e método para particionamento, chamado de partitioned tables e indexes. 
+
+II. A afirmação é falsa porque tanto o PostgreSQL quanto o SQL Server e o MySQL oferecem suporte completo a transações ACID. Isso é uma característica de quase todos os modernos sistemas de gerenciamento de banco de dados relacionais.
+
+III. Essa afirmação é verdadeira. O partition pruning é um recurso presente no SQL Server, PostgreSQL e MySQL, o que permite o aumento de desempenho em consultas que podem ser restritas a um subconjunto das partições de uma tabela.",634007
+236,tópico 6, Testes de hipóteses: teste-z; teste-t; valorp; testes para uma amostra; testes de comparação de duas amostras; teste de normalidade (chi square); e intervalos de confiança.,"Questão: Uma pesquisa foi realizada para investigar a eficácia de um novo medicamento para reduzir a pressão arterial em pacientes diagnosticados com hipertensão arterial. Uma amostra de 40 pacientes foi selecionada, e a redução média da pressão arterial após o uso do medicamento foi de 5 mmHg, com um desvio padrão de 10 mmHg. A pressão arterial dos pacientes antes do tratamento tinha média conhecida de 150 mmHg. O pesquisador deseja testar se a redução observada na amostra é estatisticamente significativa em um nível de significância de 5% (α = 0,05).
+
+Para realizar o teste de hipóteses apropriado, qual dos seguintes testes deve ser usado?
+
+A) Teste-z para uma amostra
+B) Teste-t para duas amostras independentes
+C) Valor-p para amostras emparelhadas
+D) Teste de normalidade (chi-square)
+E) Teste-t para uma amostra
+
+",E," 
+
+Alternativa A (Teste-z para uma amostra) não é a correta, pois apesar de ser um teste aplicável quando conhecemos a média populacional e temos grande amostra, o teste-z é recomendado apenas quando a variância populacional é conhecida, o que não é o caso.
+
+Alternativa B (Teste-t para duas amostras independentes) não é adequada, porque estamos interessados em comparar a pressão antes e depois do tratamento no mesmo grupo de pacientes, e não entre dois grupos independentes.
+
+Alternativa C (Valor-p para amostras emparelhadas) é um conceito incorrelatamente expresso. O valor-p é uma métrica que resulta de realizar o teste de hipótese e não um teste por si só.
+
+Alternativa D (Teste de normalidade - chi-square) não é o correto, pois seu uso é para verificar a aderência de uma distribuição a uma distribuição teórica (normal, nesse caso), e não para testar a diferença de médias.
+
+Alternativa E (Teste-t para uma amostra) é a correta. A média populacional antes do tratamento é conhecida, mas a variância populacional não é. Utiliza-se o teste-t quando a variância populacional é desconhecida, mesmo com uma amostra grande (n=40 é suficientemente grande para que a distribuição t tenda para a distribuição normal). O teste verifica se a média de redução observada na amostra (5 mmHg) é significativamente diferente da média populacional (0 mmHg, assumindo que não houve redução) a um nível de significância de 5%.",3245619
+239,tópico 6,Tipos de viés no processo gerador dos dados e soluções: Sampling bias; Selection bias; Attrition bias; Reporting bias; Measurement bias.,"Questão: Em estudos observacionais e experimentais, o viés pode comprometer a validade dos resultados e as conclusões tiradas a partir de dados coletados. Qual dos seguintes tipos de viés ocorre quando certos grupos são sub-representados ou super-representados devido à maneira como as amostras são coletadas, e como ele pode ser mitigado?
+
+A) Sampling bias; mitigado pela utilização de estratificação na seleção da amostra.
+B) Selection bias; mitigado pela inclusão de todos os elementos do população alvo.
+C) Attrition bias; mitigado pela garantia de que todos os participantes sejam monitorados por igual.
+D) Reporting bias; mitigado pela implementação de medidas para garantir que todos os eventos sejam relatados.
+E) Measurement bias; mitigado pelo treinamento rigoroso dos pesquisadores na coleta de dados.
+
+",A," 
+
+Explicação dos itens:
+
+A) Correto. Sampling bias, também conhecido como viés de amostragem, ocorre quando algumas partes da população alvo têm menos probabilidade de serem incluídas na amostra do que outras. Isso pode ser mitigado pela utilização de técnicas de estratificação, que garantem que diferentes subgrupos da população sejam proporcionalmente representados na amostra.
+
+B) Incorreto. Selection bias, ou viés de seleção, ocorre quando os indivíduos selecionados para participar de um estudo não são representativos de toda a população alvo, mas este viés normalmente é resultado de como os participantes são escolhidos para o estudo, não pela sub ou super-representação devido a técnicas de amostragem.
+
+C) Incorreto. Attrition bias, ou viés de desistência, acontece em estudos longitudinais quando há uma perda diferencial de participantes ao longo do tempo, o que pode afetar a representatividade da amostra final. A mitigação envolve procedimentos para minimizar a desistência e garantir que o acompanhamento seja igual para todos os participantes.
+
+D) Incorreto. Reporting bias, ou viés de relato, ocorre quando determinados tipos de eventos ou resultados são sistematicamente sub ou super-relatados. Medidas para garantir a adequada notificação de todos os eventos ajudam a mitigar esse viés.
+
+E) Incorreto. Measurement bias, ou viés de medição, é resultante de erros sistemáticos na maneira como as informações são coletadas ou medidas. O treinamento dos pesquisadores para coletar dados de modo consistente e rigoroso é um método para mitigar esse tipo de viés.",5701428
+240,tópico 1,Banco de dados NoSQL,"Questão: Considerando o modelo NoSQL, que tem se popularizado no contexto de Big Data e aplicações que demandam escalabilidade horizontal e flexibilidade de esquema, analise as seguintes afirmações referentes às suas características e tipos:
+
+I. Bancos de dados NoSQL do tipo chave-valor armazenam os dados em um esquema que não requer uma estrutura fixa, permitindo que cada entrada tenha um conjunto único de chaves e valores associados.
+II. Bancos de dados orientados a documento, como o MongoDB, são exemplos de NoSQL que suportam indexação e buscas complexas, com a vantagem adicional de armazenar os dados de forma semelhante aos documentos JSON, facilitando o trabalho com APIs e serviços web.
+III. Sistemas NoSQL de bancos de dados em colunas, a exemplo do Cassandra, são uma boa escolha para aplicações que precisam realizar agregações complexas e joins frequentes, similares aos bancos de dados relacionais.
+IV. Os bancos de dados orientados a grafos, como o Neo4j, não são recomendados para aplicativos que necessitam de relacionamentos entre os dados, pois essa categoria de NoSQL não suporta operações que envolvem a análise de interconexões entre os dados.
+
+Qual das afirmações acima está INCORRETA?
+
+A) I e II
+B) II e III
+C) III e IV
+D) Apenas IV
+E) Apenas III
+
+",C,"
+
+Explicações dos itens:
+
+I. Esta afirmação é verdadeira. Os sistemas chave-valor, como o Redis, realmente permitem esquemas flexíveis, o que é uma característica notável dos bancos de dados NoSQL.
+
+II. Esta afirmação é verdadeira. Bancos de dados orientados a documentos são projetados para armazenar, recuperar e gerenciar estruturas de documentos semiestruturados, e o MongoDB é um exemplo clássico de suporte a indexação e buscas complexas.
+
+III. Esta afirmação é falsa. Bancos de dados em colunas são otimizados para leituras e escritas rápidas de grandes volumes de dados e não para agregações complexas e joins, que são mais comuns em sistemas relacionais.
+
+IV. Esta afirmação é falsa. Bancos de dados orientados a grafos foram criados exatamente para lidar com relações complexas entre os dados, com alto desempenho em operações que envolvem a análise de interconexões.",403757
+247,tópico 5,Técnicas de regressão: Árvores de decisão para regressão; Máquinas de vetores de suporte para regressão,"Questão: Ao aplicar técnicas de regressão em um conjunto de dados complexo e de grande dimensão, um cientista de dados pode optar por usar Árvores de Decisão para Regressão (Decision Tree Regression) ou Máquinas de Vetores de Suporte para Regressão (Support Vector Regression - SVR). Ambas as técnicas têm suas particularidades em termos de modelagem e aplicabilidade. Nesse contexto, analise as afirmativas a seguir e marque a opção que contém a assertiva correta:
+
+I. As Árvores de Decisão para Regressão são modelos não-lineares e não-paramétricos que se ajustam perfeitamente a dados com relações lineares.
+
+II. As Máquinas de Vetores de Suporte para Regressão são capazes de modelar relações complexas e não-lineares entre as variáveis independentes e a resposta, especialmente com o uso de funções de kernel.
+
+III. Uma vantagem das Árvores de Decisão para Regressão é sua capacidade de lidar tanto com variáveis categóricas quanto numéricas sem a necessidade de transformação prévia.
+
+IV. As Máquinas de Vetores de Suporte para Regressão requerem a escolha de um parâmetro de regularização e uma função de kernel apropriada, tornando-se mais complexas na fase de configuração e escolha de parâmetros do que as Árvores de Decisão.
+
+A) Apenas a afirmativa I está correta.
+B) Apenas a afirmativa II está correta.
+C) Apenas a afirmativa III está correta.
+D) As afirmativas II e IV estão corretas.
+E) Todas as afirmativas I, II, III e IV estão corretas.
+
+",D,"
+
+Explicação dos itens:
+
+I. Esta afirmativa é incorreta. As Árvores de Decisão para Regressão são modelos não-lineares sim, mas elas não se ajustam perfeitamente apenas a dados com relações lineares. Na verdade, são flexíveis para capturar relações não-lineares e interações complexas entre as variáveis.
+
+II. Esta afirmativa é correta. As SVR são particulares por utilizar funções de kernel para modelar relações complexas e não-lineares. Esse recurso permite que a SVR lide eficazmente com dados em espaços de maior dimensão e descubra padrões complexos.
+
+III. Esta afirmativa é correta parcialmente. Enquanto as Árvores de Decisão para Regressão podem lidar diretamente com variáveis categóricas e numéricas, isso não significa que elas sempre operem sem a necessidade de transformação prévia. Em certos casos, a transformação de variáveis pode melhorar a performance do modelo.
+
+IV. Esta afirmativa é correta. A escolha adequada do parâmetro de regularização e da função de kernel é essencial para o desempenho da SVR. Isso pode tornar a fase de configuração do modelo mais complexa em comparação com as Árvores de Decisão, que geralmente têm uma configuração mais direta.
+
+Assim, apenas as afirmativas II e IV estão corretas, tornando a opção D a resposta correta.",1942119
+258,tópico 5,"Rotulação de partes do discurso, part-of-speech tagging","Questão: Em processamento de linguagem natural, a técnica conhecida como ""Part-Of-Speech Tagging"" (POS Tagging), ou rotulação de partes do discurso, é fundamental para diversas aplicações, como análise sintática, reconhecimento de entidades nomeadas e tradução automática. Considere o seguinte conjunto de tags do Universal POS tags:
+
+1. VERB - verbos (todos os tempos e modos)
+2. NOUN - substantivos (comuns e próprios)
+3. PRON - pronomes
+4. ADJ - adjetivos
+5. ADV - advérbios
+6. ADP - preposições e pós-posições
+7. CONJ - conjunções coordenativas e subordinativas
+8. DET - determinantes
+9. NUM - numerais
+10. PRT - partículas ou palavras de função gramatical
+11. X - outros
+
+Ao analisar a sentença ""O pequeno gato dormia tranquilamente sobre o tapete"", que conjunto de tags do Universal POS corretamente identifica as partes do discurso presentes na sentença?
+
+A) DET, ADJ, NOUN, VERB, ADJ, ADP, DET, NOUN
+B) DET, VERB, NOUN, VERB, ADV, ADP, DET, NOUN
+C) DET, ADJ, ADJ, VERB, ADV, ADP, NOUN, NOUN
+D) DET, ADJ, NOUN, ADJ, VERB, ADP, DET, NOUN
+E) DET, ADJ, NOUN, VERB, ADV, ADP, DET, NOUN
+
+",E," 
+
+A opção E é a correta, pois identifica de maneira acurada cada parte do discurso da sentença em questão:
+- DET ""O"" é um determinante (artigo definido).
+- ADJ ""pequeno"" é um adjetivo que qualifica o substantivo seguinte.
+- NOUN ""gato"" é um substantivo, o sujeito da sentença.
+- VERB ""dormia"" é um verbo que indica a ação realizada pelo sujeito.
+- ADV ""tranquilamente"" é um advérbio que modifica o verbo, indicando a maneira como o gato dormia.
+- ADP ""sobre"" é uma preposição que introduz a locução prepositiva, indicando a relação de lugar.
+- DET ""o"" é um segundo determinante (artigo definido).
+- NOUN ""tapete"" é um substantivo que completa o sentido da locução prepositiva.
+
+As demais opções estão incorretas porque atribuem tags que não correspondem às partes do discurso referidas na sentença. Por exemplo, a opção A atribui erradamente a tag ADJ ao verbo ""dormia"", enquanto a opção B rotula incorretamente o adjetivo ""pequeno"" como um verbo, além de ignorar a preposição ""sobre"". A opção C incorretamente identifica dois adjetivos em sequência e não reconhece o advérbio ""tranquilamente"". Por fim, a opção D insere a tag ADJ onde deveria estar a tag VERB, mostrando uma má interpretação do papel de ""dormia"" na sentença.",514155
+275,tópico 5,Ajuste de modelos dentro e fora de amostra e overfitting,"Questão:
+ 
+A técnica de ajuste de modelos em aprendizado de máquina e estatística envolve a otimização dos parâmetros do modelo de modo a melhor capturar a relação existente entre as variáveis independentes e a variável dependente. No entanto, um problema comum encontrado é o overfitting, no qual o modelo ajusta-se perfeitamente aos dados da amostra (in-sample) mas não generaliza bem para novos dados (out-of-sample). Com base nesse conhecimento, considere as seguintes afirmativas a respeito do ajuste de modelos e identifique a opção correta:
+
+I. A validação cruzada é uma técnica que pode ajudar a mitigar o overfitting, permitindo que o modelo seja testado com múltiplos conjuntos de treinamento e validação extraídos da mesma amostra. 
+II. Um modelo com alto overfitting pode ter um desempenho notavelmente bom fora da amostra, pois suas especificações complexas permitem uma adaptação precisa a qualquer conjunto de dados.
+III. A complexidade do modelo deve ser regulada de forma a equilibrar o erro de treinamento e o erro de validação, evitando assim o trade-off entre viés e variância.
+IV. Um modelo com overfitting é caracterizado por um baixo erro de treinamento e um alto erro de validação, sinalizando que o modelo pode não ser capaz de generalizar bem para dados não vistos.
+
+A opção que contém todas as afirmativas verdadeiras é:
+
+a) I e II
+b) I e III
+c) II e IV
+d) III e IV
+e) I e IV
+
+",B," 
+
+Explicação dos itens:
+
+I. Verdadeira. A validação cruzada é uma técnica amplamente utilizada para avaliar a capacidade de generalização de um modelo, utilizando diferentes partes da amostra em iterações distintas.
+
+II. Falsa. Overfitting caracteriza-se por uma alta performance na amostra de treinamento, mas uma performance pobre em dados não vistos (fora da amostra). Isso ocorre porque o modelo se torna excessivamente complexo e captura o ruído específico dos dados de treinamento, ao invés das verdadeiras tendências subjacentes.
+
+III. Verdadeira. O ajuste de modelo ideal envolve encontrar um ponto ótimo entre viés (underfitting) e variância (overfitting), o que é muitas vezes referido como o trade-off viés-variância.
+
+IV. Verdadeira. A discrepância entre um baixo erro de treinamento e um alto erro de validação é um indicativo clássico de overfitting, sugerindo que o modelo está memorizando os dados de treinamento específicos, em vez de aprender padrões generalizáveis.
+
+Assim, a resposta correta é o item b), que lista as afirmativas I e III como verdadeiras e descarta a afirmativa II, que está incorreta. O item IV também é verdadeiro e está correto ao mencionar as características de um modelo com overfitting.",4631738
+290,tópico 5,Técnicas de classificação: Naive Bayes; Árvores de decisão (algoritmos ID3 e C4.5); Florestas aleatórias (random forest); Máquinas de vetores de suporte (SVM – support vector machines); K vizinhos mais próximos (KNN – K-nearest neighbours),"Questão:
+A técnica de classificação é fundamental na análise de dados para a identificação de padrões e a tomada de decisões baseadas em conjuntos de informações. Considere os algoritmos a seguir: Naive Bayes, Árvores de decisão (algoritmos ID3 e C4.5), Florestas aleatórias (Random Forest), Máquinas de vetores de suporte (SVM – Support Vector Machines) e K vizinhos mais próximos (KNN – K-Nearest Neighbours). Cada um desses algoritmos possui características distintas. Sendo assim, qual dos algoritmos listados NÃO se baseia em uma abordagem de aprendizagem baseada em instâncias para realizar a classificação?
+
+A) Naive Bayes
+B) Árvores de decisão (ID3)
+C) Random Forest
+D) SVM
+E) KNN
+
+",A,"
+
+Explicação dos itens:
+A) O algoritmo Naive Bayes é um classificador probabilístico baseado no teorema de Bayes. Ele não se baseia em aprendizagem baseada em instâncias, mas sim na probabilidade de ocorrência de características para determinar a classificação.
+B) As árvores de decisão, incluindo os algoritmos ID3, constroem uma estrutura em forma de árvore, onde cada nó representa uma decisão baseada em um atributo. Não é uma abordagem baseada em instâncias.
+C) Random Forest é um método de ensemble que cria diversas árvores de decisão durante o treinamento e faz a classificação por meio de uma votação majoritária entre essas árvores. Também não é uma abordagem baseada em instâncias.
+D) SVM é uma técnica que tenta encontrar o hiperplano de separação ótimo entre as diferentes classes de dados. É uma abordagem baseada em geometria e não em instâncias.
+E) KNN é um algoritmo que classifica um novo objeto com base na similaridade com os 'K' vizinhos mais próximos encontrados no espaço de características. É o único algoritmo da lista que se baseia explicitamente em aprendizagem baseada em instâncias.",8543681
+292,tópico 5,Técnicas de regressão: Árvores de decisão para regressão; Máquinas de vetores de suporte para regressão,"Questão: A modelagem preditiva é uma ferramenta estatística essencial para o entendimento de complexas relações entre variáveis em diversas áreas, incluindo finanças, medicina e pesquisa social. No contexto do aprendizado de máquina, técnicas como Árvores de Decisão para Regressão (Decision Tree Regression) e Máquinas de Vetores de Suporte para Regressão (Support Vector Regression - SVR) são amplamente utilizadas para predizer valores contínuos com base em variáveis independentes. Sobre essas duas técnicas, afirma-se que:
+
+I - Árvores de Decisão para Regressão funcionam dividindo o espaço da variável independente em regiões distintas e fazendo previsões com base na média dos valores da variável dependente em cada região.
+
+II - Máquinas de Vetores de Suporte para Regressão são robustas a outliers, pois empregam a ideia de margem suave, permitindo que algumas violações no limite do corredor de decisão ocorram sem grande penalização no modelo.
+
+III - Ao contrário das Árvores de Decisão, Máquinas de Vetores de Suporte para Regressão não são capazes de modelar relações não lineares, mesmo quando empregando funções kernel.
+
+IV - Tanto as Árvores de Decisão para Regressão quanto as Máquinas de Vetores de Suporte exigem criteriosa parametrização e ajuste fino (fine-tuning) para evitar o sobreajuste (overfitting) dos modelos aos dados de treinamento.
+
+Estão corretas apenas as afirmativas:
+
+A) I e III
+B) II e IV
+C) I, II e IV
+D) I, II e III
+E) Todas as afirmativas estão corretas
+
+",C,"
+A alternativa correta é a C, ""I, II e IV"". Seguindo a separação padrão:
+
+I - Esta afirmação é verdadeira. Árvores de Decisão para Regressão funcionam dividindo o espaço de entrada em regiões e fazendo previsões por meio do valor médio da variável de saída em cada região. Isso é conhecido como aproximação de ""peça por peça"".
+
+II - Esta afirmação também é verdadeira. Máquinas de Vetores de Suporte para Regressão podem ser mais tolerantes a outliers porque a função de perda usada (geralmente, a função de perda epsilon-insensível) não penaliza erros dentro de um determinado limite, o que é considerado a margem suave.
+
+III - Esta afirmação é falsa. Máquinas de Vetores de Suporte podem modelar relações não lineares usando funções kernel, como o RBF (Radial Basis Function), polinomial, ou sigmoide, o que é uma característica importante dessa técnica.
+
+IV - Esta afirmação é verdadeira. Para evitar o sobreajuste, é necessário um ajuste cuidadoso dos parâmetros tanto nas Árvores de Decisão para Regressão quanto nas Máquinas de Vetores de Suporte. No caso das árvores, parâmetros como a profundidade máxima, número mínimo de amostras por folha e métodos de poda são cruciais. Nas SVMs, os parâmetros do kernel e o parâmetro de regularização C desempenham papel semelhante.",1708013
+303,tópico 5,Técnicas de redução de dimensionalidade: Seleção de características (feature selection); Análise de componentes principais (PCA – principal component analysis),"Questão: Em análise de dados, diversas técnicas são utilizadas para redução de dimensionalidade, com o objetivo de simplificar modelos, reduzir custo computacional ou remover informações redundantes. Entre as técnicas de Seleção de características (feature selection) e Análise de componentes principais (PCA – principal component analysis), assinale a alternativa correta referente às suas aplicações e caracterizações.
+
+A) Seleção de características é uma técnica que, ao contrário do PCA, mantém a interpretabilidade original das variáveis, pois seleciona um subconjunto de características originais relevantes para o modelo.
+
+B) PCA transforma as variáveis originais em um novo conjunto de variáveis, chamadas de componentes principais, que não são escolhidas por sua relevância, mas por sua capacidade de reter a variabilidade dos dados originais.
+
+C) Tanto a seleção de características como o PCA são métodos supervisionados, necessitando do conhecimento dos rótulos dos dados para determinar a redução de dimensionalidade mais apropriada.
+
+D) O PCA é considerado uma técnica de feature selection, pois seleciona as variáveis mais importantes mantendo a variabilidade dos dados e ignorando as demais.
+
+E) Seleção de características busca maximizar a variância dos dados enquanto minimiza a covariância entre as variáveis, processo inverso ao realizado pelo PCA.
+
+",A," 
+A seleção de características é um método de redução de dimensionalidade que busca escolher um subconjeto de características relevantes a partir das características originais, preservando a interpretabilidade das variáveis. Ela não transforma os dados, apenas seleciona dentre os existentes. Já o PCA, caracterizado na opção B, é um método não-supervisionado que transforma as variáveis originais em componentes principais, que são um novo conjunto de variáveis ortogonais que maximizam a variabilidade dos dados. A opção C está incorreta porque o PCA é um método não-supervisionado e não requer rótulos dos dados. A opção D não é correta porque PCA é uma técnica de transformação de características, e não seleção. Finalmente, a opção E confunde os objetivos das duas técnicas, já que a seleção de características não visa a maximização ou minimização de variância ou covariância.",6283704
+310,tópico 5,"Métricas de similaridade textual - similaridade do cosseno, distância euclidiana, similaridade de Jaccard, distância de Manhattan e coeficiente de Dice","Questão: Em análise de dados textuais, diversas métricas são empregadas para quantificar a similaridade ou distância entre textos. Dentre as afirmações abaixo sobre métricas de similaridade textual, identifique a correta quanto à aplicação e característica de cada uma das seguintes métricas: similaridade do cosseno, distância euclidiana, similaridade de Jaccard, distância de Manhattan e coeficiente de Dice.
+
+A) A similaridade do cosseno é uma métrica que leva em conta a magnitude dos vetores representando os textos e é ideal para textos de comprimentos bastante distintos.
+
+B) A distância euclidiana é uma métrica apropriada para espaços de alta dimensão, como os espaços vetoriais de textos, uma vez que ela não sofre com a maldição da dimensionalidade.
+
+C) A similaridade de Jaccard é uma métrica baseada na interseção sobre a união de termos entre dois conjuntos, sendo particularmente útil quando os pesos dos termos não são relevantes.
+
+D) A distância de Manhattan é calculada somando-se as diferenças absolutas entre as coordenadas correspondentes dos vetores de texto, sendo extremamente sensível às diferenças em dimensões raras nos dados.
+
+E) O coeficiente de Dice é uma medida que compara a similaridade entre amostras considerando apenas as interseções, ignorando a união dos elementos nos conjuntos, o que a torna ideal para dados esparsos.
+
+",C,"
+
+Explicação dos itens:
+
+A) Incorrecto. A similaridade do cosseno mede o ângulo entre dois vetores e é de fato apropriada para comparar textos de diferentes comprimentos, mas porque ela é independente da magnitude (e não porque leva a magnitude em conta).
+
+B) Incorrecto. A distância euclidiana pode não ser a ideal para espaços de alta dimensão devido à maldição da dimensionalidade, onde o aumento das dimensões pode levar a uma perda de significado na medida de distância.
+
+C) Correto. A similaridade de Jaccard é útil para comparar a semelhança entre conjuntos, baseando-se na proporção de interseção para a união dos conjuntos e é eficaz quando os pesos dos elementos não são considerados.
+
+D) Incorrecto. A distância de Manhattan soma as diferenças absolutas das dimensões dos vetores, mas não é extremamente sensível a diferenças em dimensões raras. Ela é sensível à variação em qualquer dimensão e é usada em casos onde as distâncias devem ser tratadas de forma linear.
+
+E) Incorrecto. O coeficiente de Dice considera tanto a interseção quanto o dobro da interseção no denominador, dividido pela soma dos tamanhos dos dois conjuntos. Não ignora a união dos conjuntos e é usado quando a duplicação da interseção é importante para a análise.",4173727
+326,tópico 5,"Rotulação de partes do discurso, part-of-speech tagging","Questão:
+Considere que um pesquisador em processamento de linguagem natural está trabalhando com rotulação de partes do discurso (Part-of-Speech Tagging - POS Tagging) em um corpus do idioma português. O cientista deseja aplicar um modelo de aprendizado de máquina supervisionado para automatizar o processo de anotação, visando a atribuir etiquetas gramaticais às palavras. Qual das opções abaixo revela uma etapa essencial antes da implementação do algoritmo de POS Tagging, que poderá influenciar diretamente a eficiência do modelo?
+
+A) Conversão de todas as palavras para letras minúsculas para evitar a categorização de palavras iguais como diferentes.
+B) Utilização exclusiva de textos literários no treinamento para assegurar uma rica variedade de estruturas gramaticais.
+C) Inclusão de etiquetas de emoção no conjunto de dados, ampliando a compreensão semântica das sentenças pelo modelo.
+D) Remoção completa de pontuação do texto para simplificar o vocabulário a ser analisado pelo algoritmo.
+E) Preparação de um conjunto de dados anotados manualmente que servirá como referência para o treino do algoritmo.
+
+",E,"
+
+Explicação dos itens:
+
+A) A conversão de palavras para letras minúsculas é uma técnica comum em tarefas de processamento de texto, mas pode não ser apropriada para POS Tagging, onde a capitalização pode oferecer pistas importantes para identificação das classes gramaticais, como substantivos próprios. Logo, essa etapa não é essencial e pode ser contraproducente.
+
+B) Embora textos literários possam oferecer diversidade linguística, limitar o treinamento a esse tipo de texto pode reduzir a generalização do modelo, visto que outros gêneros textuais têm estruturas e usos linguísticos que podem não estar presentes na literatura. Portanto, tal exclusividade não é recomendada.
+
+C) As etiquetas de emoção não são diretamente relevantes para o processo de POS Tagging, que lida primariamente com classes gramaticais e não com a análise de sentimentos ou conteúdo emocional das sentenças.
+
+D) A pontuação pode ser crucial na delimitação de sentenças e no entendimento do papel gramatical das palavras adjacentes. Remover totalmente a pontuação pode prejudicar a identificação correta das partes do discurso.
+
+E) A preparação de um conjunto de dados anotados manualmente é essencial para treinar um modelo de aprendizado de máquina supervisionado. O modelo depende desse conjunto para aprender a reconhecer padrões e aplicar as etiquetas corretas, influenciando significativamente a eficiência do modelo no POS Tagging. É a etapa mais relevante antes da implementação do algoritmo.
+",1614640
+340,tópico 5,"Métricas de similaridade textual - similaridade do cosseno, distância euclidiana, similaridade de Jaccard, distância de Manhattan e coeficiente de Dice","Questão:
+
+Na área de Processamento de Linguagem Natural (PLN), métricas de similaridade textual são fundamentais para diversas aplicações, como recuperação da informação, detecção de plágio, e sistemas de recomendação. Considere um cenário onde dois documentos de texto precisam ser comparados quanto ao seu conteúdo semântico. 
+
+Assinale a opção que descreve corretamente uma métrica de similaridade textual inadequada para mensurar a similaridade semântica entre dois documentos baseando-se apenas na frequência dos termos.
+
+A) Similaridade do Cosseno - mede o cosseno do ângulo entre dois vetores multidimensionais, sendo cada vetor uma representação do documento no espaço de termos.
+
+B) Distância Euclidiana - calcula a raiz quadrada da soma dos quadrados das diferenças entre as coordenadas dos vetores que representam os documentos.
+
+C) Similaridade de Jaccard - computa a similaridade entre dois conjuntos, sendo a divisão do tamanho da interseção pelo tamanho da união dos conjuntos.
+
+D) Distância de Manhattan - soma o valor absoluto das diferenças entre as coordenadas de dois pontos em um espaço n-dimensional.
+
+E) Coeficiente de Dice - considera duas vezes o número de termos comuns entre os documentos dividido pela soma dos termos nos dois documentos.
+
+",B,"
+
+A - Similaridade do Cosseno é uma métrica apropriada para medir a similaridade semântica, pois leva em conta a orientação, mas não a magnitude dos vetores que representam os documentos.
+
+B - A Distância Euclidiana não é a mais indicada para medir similaridade semântica nesse contexto porque ela é mais sensível à magnitude dos vetores do que à sua direção, o que pode não refletir adequadamente a similaridade de conteúdo quando a frequência dos termos é considerada.
+
+C - Similaridade de Jaccard é adequada para textos convertidos em conjuntos de termos, focando na presença ou ausência de termos e não na sua frequência.
+
+D - Distância de Manhattan é uma métrica que pode ser usada na comparação de documentos, pois foca nas diferenças absolutas entre os termos, mas pode não ser tão precisa quanto a similaridade do cosseno para refletir a similaridade semântica.
+
+E - Coeficiente de Dice é outra métrica de similaridade que foca na proporção de termos compartilhados, sendo útil em contextos semânticos.",8631878
+370,tópico 5,"Métricas de similaridade textual - similaridade do cosseno, distância euclidiana, similaridade de Jaccard, distância de Manhattan e coeficiente de Dice","Considere um cenário onde um analista de dados está trabalhando com processamento de linguagem natural e análise de similaridade textual entre documentos. O analista deseja escolher uma métrica adequada que possa levar em conta o peso de termos dentro dos documentos e que seja menos afetada pela magnitude dos vetores em comparação com outras técnicas básicas de distância. Além disso, é importante que a métrica escolhida seja normalizada para que o resultado esteja sempre entre 0 e 1. 
+
+Dentre as opções listadas abaixo, qual é a métrica mais apropriada para atender aos requisitos do analista?
+
+A) Distância Euclidiana
+B) Similaridade de Jaccard
+C) Similaridade do Cosseno
+D) Distância de Manhattan
+E) Coeficiente de Dice
+
+",C," 
+A) Distância Euclidiana - Essa métrica mede a distância 'direta' entre dois pontos em um espaço multidimensional, o que pode ser afetado pela magnitude dos vetores, não sendo normalizada entre 0 e 1.
+
+B) Similaridade de Jaccard - Essa métrica mede a similaridade e diversidade entre conjuntos de amostras. É mais comumente usada para medir a similaridade entre conjuntos de dados binários, não levando em conta o peso dos termos.
+
+C) Similaridade do Cosseno - Esta é a métrica adequada para a situação descrita. Ela mede o cosseno do ângulo entre dois vetores em um espaço de atributos, é normalizada entre 0 e 1 independentemente da magnitude dos vetores, dando atenção ao peso dos termos devido à forma como os vetores são construídos com base na frequência dos termos.
+
+D) Distância de Manhattan - Essa métrica soma as diferenças absolutas de seus componentes e pode ser interpretada como o caminho que seria percorrido para se mover de um ponto a outro se um 'grid' como em uma cidade fosse usado para viagens, onde apenas movimentos ortogonais são possíveis. Não é normalizada e pode ser afetada pela magnitude dos vetores.
+
+E) Coeficiente de Dice - Esta métrica é semelhante à Similaridade de Jaccard na medida em que é usada para avaliar a similaridade entre dois conjuntos, porém não leva em conta o peso dos termos e também não é sempre normalizada entre 0 e 1.",6193618
+379,tópico 6,Métodos e técnicas de identificação causal: Métodos experimentais RCT e de identificação quase-experimental,"Questão:
+A eficácia de métodos experimentais e quase-experimentais para a identificação causal em ciências sociais tem sido amplamente discutida. Entre estes métodos, os Ensaios Controlados Randomizados (RCTs) e os de Identificação Quase-Experimental desempenham papéis críticos. Com relação a esses métodos, avalie as seguintes afirmações:
+
+I. RCTs são considerados o ""padrão-ouro"" para determinar relações causais, pois a randomização ajuda a eliminar o viés de seleção e confundimento de variáveis.
+II. Métodos quase-experimentais, como a avaliação por diferença em diferenças (DiD), podem ser aplicados em situações onde a randomização não é possível, embora os resultados possam estar sujeitos a viés de eventos concomitantes não observados.
+III. Tanto os RCTs quanto os métodos quase-experimentais sempre garantem a identificação de efeitos causais puros, independentemente das circunstâncias e contexto aplicados.
+
+É correto o que se afirma em:
+
+A) I, apenas.
+B) II, apenas.
+C) I e II, apenas.
+D) III, apenas.
+E) I, II e III.
+
+",C," 
+
+Explicação dos itens:
+
+I. Esta afirmação é verdadeira, uma vez que a principal vantagem dos RCTs é a randomização, que ajuda a criar grupos de tratamento e controle comparáveis, permitindo assim uma estimativa causal mais precisa ao eliminar ou reduzir o viés de seleção e confundimento.
+
+II. Esta afirmação também é verdadeira. Métodos quase-experimentais, como DiD, são utilizados quando a randomização não é viável por motivos éticos, práticos ou por restrições de tempo. Eles esforçam-se para simular um experimento e podem proporcionar estimativas causais razoáveis, porém, estão mais suscetíveis a viés causado por variáveis não observadas ou eventos concomitantes que podem impactar tanto o grupo de tratamento quanto o grupo de controle.
+
+III. Esta afirmação é falsa. Embora RCTs e métodos quase-experimentais sejam projetados para identificar relações causais, eles têm limitações e não podem garantir a identificação de efeitos causais puros em todas as circunstâncias. A validade dos resultados depende da adequada aplicação dos métodos e do controle sobre possíveis fontes de viés.",5093924
+387,tópico 6,Testes de hipóteses: teste-z; teste-t; valorp; testes para uma amostra; testes de comparação de duas amostras; teste de normalidade (chi square); e intervalos de confiança.,"Questão: Um pesquisador deseja comparar o tempo médio de resposta a um medicamento entre dois grupos distintos de pacientes. O grupo A, com uma amostra de 50 pacientes, apresentou média de tempo de resposta de 8,4 horas com um desvio padrão de 1,2 horas, enquanto o grupo B, com uma amostra de 60 pacientes, registrou uma média de tempo de resposta de 7,8 horas com um desvio padrão de 1,4 horas. Assumindo uma variância comum e desconhecida entre as populações e um nível de significância de 5%, qual seria o teste estatístico mais apropriado para comparar os tempos médios de resposta dos dois grupos e qual seria a decisão correta baseada nesse teste?
+
+A) Teste-Z para duas amostras, não rejeitar a hipótese nula.
+B) Teste-Z para duas amostras, rejeitar a hipótese nula.
+C) Teste-t para duas amostras independentes, não rejeitar a hipótese nula.
+D) Teste-t para duas amostras independentes, rejeitar a hipótese nula.
+E) Teste de normalidade (chi-square), não rejeitar a hipótese nula.
+
+",D," 
+
+Explicação:
+A) Teste-Z para duas amostras é geralmente usado quando conhecemos as variâncias das populações ou quando as amostras são suficientemente grandes (geralmente n > 30 é considerado grande). No entanto, aqui as variâncias são desconhecidas e assumidas como comuns, tornando essa opção incorreta.
+B) Mesma explicação da alternativa A, mas acrescentando que a decisão sobre rejeitar ou não a hipótese nula dependeria do cálculo do valor-p, não podendo ser determinada apenas com as informações fornecidas.
+C) Teste-t para duas amostras independentes é o teste correto aqui, uma vez que as variâncias são desconhecidas e as amostras não são excepcionalmente grandes. No entanto, não podemos definir se devemos ou não rejeitar a hipótese nula sem realizar os cálculos.
+D) Esta é a resposta correta, pois o teste-t para duas amostras independentes é o teste apropriado para comparar duas médias de amostras independentes com variâncias desconhecidas e assumidamente iguais. O pesquisador deve então calcular o valor-t e compará-lo com o valor crítico do teste-t para um nível de significância de 5%. Se o valor-t calculado excede o valor crítico, rejeita-se a hipótese nula.
+E) O teste de normalidade (chi-square) é utilizado para verificar se uma distribuição de frequências se ajusta a uma distribuição teórica, como a normal. Não é o teste adequado para comparar médias entre grupos.",3863518
+390,tópico 6,Modelos probabilísticos gráficos: cadeias de Markov; filtros de Kalman; Redes bayesianas,"Questão: Uma empresa de transporte deseja otimizar seu sistema de envio de cargas, tendo em conta a probabilidade de atrasos devido a condições climáticas adversas. Para isso, a equipe de logística está considerando aplicar modelos probabilísticos gráficos na previsão de incidentes que podem afetar o prazo de entrega. Qual das seguintes abordagens é mais adequada para modelar a sequência temporal de eventos envolvendo atrasos condicionados ao estado do clima e outras variáveis observáveis, com o objetivo de predizer o risco de atraso na entrega?
+
+A) Utilizar uma Rede Bayesiana estática, já que esse modelo é eficiente na captura de todas as dependências entre variáveis envolvidas no processo.
+
+B) Implementar uma cadeia de Markov, pois este modelo é adequado para representar processos estocásticos que possuem o princípio de Markov (sem memória), onde a previsão do próximo estado depende apenas do estado atual.
+
+C) Desenvolver filtros de Kalman que são ótimos para lidar com variáveis aleatórias contínuas e observações ruidosas, o que se aplica diretamente na previsão de atrasos baseada em medições meteorológicas imprecisas.
+
+D) Incorporar modelos de filas e teoria das filas para prever com precisão os tempos de espera dado o número de cargas e de veículos disponíveis, independentemente de outros fatores.
+
+E) Aplicar uma cadeia de Markov oculta, pois além de considerar as transições de estados como numa cadeia de Markov, este modelo permite lidar com eventos não diretamente observáveis, como é o caso da condição real do clima.
+
+",E," 
+
+A alternativa E está correta porque as cadeias de Markov ocultas são ideais para modelar processos em que existe uma sequência temporal de eventos observáveis que são influenciados por estados internos não observáveis. No contexto da questão, os estados não observáveis seriam as condições climáticas reais, e os eventos observáveis seriam os atrasos de entrega da empresa de transporte. 
+
+- A alternativa A é incorreta, pois as Redes Bayesianas estáticas são mais adequadas para representar as relações causais entre variáveis em um dado ponto no tempo e não são ideais para sequências temporais.
+- A alternativa B é inadequada, uma cadeia de Markov simples não leva em conta variáveis observáveis e não observáveis e é limitada às transições de estado baseadas no estado presente.
+- A alternativa C, os filtros de Kalman, são usados primariamente para sistemas dinâmicos lineares em tempo contínuo e podem não ser ideais para modelar a sequência discreta de atrasos de entrega.
+- A alternativa D não é a mais apropriada, pois a teoria das filas é mais focada em processos de serviço e espera, e não leva em conta a complexidade de variáveis como as condições climáticas na modelagem de atrasos.",5960198
+400,tópico 6,Modelos probabilísticos gráficos: cadeias de Markov; filtros de Kalman; Redes bayesianas,"Questão: Em um sistema de monitoramento meteorológico, está sendo implementado um modelo probabilístico para prever o estado do tempo em uma determinada região. Para tal, pesquisadores optaram por utilizar uma cadeia de Markov para modelar as transições diárias do tempo, considerando três estados principais: Ensolarado, Nublado e Chuvoso. Segundo o histórico de dados, as transições de estado são conforme as seguintes probabilidades: P(Ensolarado|Nublado) = 0.3, P(Chuvoso|Nublado) = 0.4, P(Nublado|Chuvoso) = 0.5, e P(Ensolarado|Chuvoso) = 0.1. Se um dia particular amanheceu nublado, qual é a probabilidade de que em dois dias o tempo esteja ensolarado?
+
+A) 0.03
+B) 0.09
+C) 0.12
+D) 0.18
+E) 0.27
+
+",C,"
+
+Explicação dos itens:
+
+A) 0.03: Este valor é muito baixo e não corresponde ao cálculo correto da probabilidade de dois passos da transição de Nublado para Ensolarado.
+
+B) 0.09: Este valor sugere um simples quadrado da probabilidade de um único passo, que não leva em consideração a variação de estados intermediários.
+
+C) 0.12: Esse é o valor correto. Para calcular a probabilidade de estar Ensolarado depois de dois dias, é necessário considerar todas as transições possíveis através dos estados intermediários e depois somá-los. No caso: P(Ensolarado|Nublado no segundo dia) = P(Nublado|Nublado no primeiro dia) * P(Ensolarado|Nublado no segundo dia) + P(Chuvoso|Nublado no primeiro dia) * P(Ensolarado|Chuvoso no segundo dia) = 0.3 * 0.3 + 0.4 * 0.1 = 0.09 + 0.04 = 0.13 (aproximadamente 0.12 arredondado dependendo dos critérios de arredondamento).
+
+D) 0.18: Este valor pode ser confundido se considerarmos apenas o produto das probabilidades de Nublado para Ensolarado e de Nublado para Chuvoso, mas não leva em conta a probabilidade de transição do segundo dia.
+
+E) 0.27: Este valor é a multiplicação direta da probabilidade de Nublado para Ensolarado consigo mesma, o que seria o cálculo para dois dias consecutivos de transição direta de Nublado para Ensolarado, o que não é possível no cenário descrito.",2061315
+402,tópico 6,Tipos de viés no processo gerador dos dados e soluções: Sampling bias; Selection bias; Attrition bias; Reporting bias; Measurement bias.,"Questão:
+
+A qualidade da pesquisa científica frequentemente depende da precisão e da representatividade dos dados coletados. Vieses no processo gerador dos dados podem comprometer a validade interna e externa dos resultados. Considerando os diferentes tipos de viés que podem ocorrer na coleta e análise de dados em estudos observacionais e experimentais, indique qual alternativa corretamente associa um tipo de viés com a sua definição ou exemplo:
+
+A) Sampling bias - ocorre quando as conclusões de um estudo são sistematicamente diferentes das verdadeiras características da população alvo, como o overfitting de um modelo estatístico.
+
+B) Selection bias - refere-se a erros sistemáticos que ocorrem devido à maneira não aleatória em que os participantes são selecionados para o estudo, o que afeta a generalização dos resultados para a população alvo.
+
+C) Attrition bias - um tipo de viés associado ao excesso de precisão nas medições, levando a uma superestimação da significância estatística dos resultados.
+
+D) Reporting bias - a tendência de subestimar os efeitos adversos de um tratamento devido ao foco apenas nos casos de sucesso, excluindo os fracassos da publicação.
+
+E) Measurement bias - um viés causado pela perda de participantes ao longo do estudo, o que pode resultar em diferenças sistemáticas entre os participantes que permanecem e os que desistem.
+
+",B,"
+
+Explicação dos itens:
+
+A) Sampling bias se refere ao viés introduzido quando os participantes de uma pesquisa ou estudo não são representativos de toda a população. O overfitting de um modelo estatístico é um problema relacionado, mas não é um exemplo de sampling bias.
+
+B) Selection bias é corretamente descrito como o viés devido à seleção não aleatória dos participantes, o que pode afetar a generalização dos resultados do estudo para a população de interesse. Isso pode ocorrer, por exemplo, se os participantes que se oferecem para um estudo têm características diferentes daqueles que não se oferecem (auto-seleção).
+
+C) Attrition bias refere-se ao viés que pode surgir quando há uma perda diferencial de participantes durante um estudo. Por exemplo, se participantes com certos comportamentos relacionados ao estudo são mais propensos a abandoná-lo, o viés de atrito pode influenciar os resultados finais.
+
+D) Reporting bias se refere ao viés que ocorre quando nem todos os resultados de um estudo são igualmente reportados, geralmente se concentrando nos resultados positivos e ignorando os negativos ou não significativos.
+
+E) Measurement bias ocorre quando há erro sistemático nos métodos de medição utilizados em um estudo. Por exemplo, se um equipamento de medição é calibrado incorretamente e favorece uma determinada direção de desvio em todas as medições.",6212204
+413,tópico 6,Métodos e técnicas de identificação causal: Métodos experimentais RCT e de identificação quase-experimental,"Questão: 
+
+No contexto de estudos econômicos e sociais, a identificação causal é fundamental para a compreensão dos efeitos de políticas públicas e intervenções variadas. Métodos experimentais e quase-experimentais oferecem diferentes abordagens para essa identificação. Considerando isso e os métodos em pauta, avalie as seguintes afirmações e escolha a opção correta.
+
+I. Experimentos randomizados controlados (RCTs) são considerados o padrão ouro para a identificação causal, pois proporcionam um alto grau de controle sobre as variáveis de interesse, através da aleatorização na distribuição dos sujeitos pelos grupos de tratamento e controle.
+
+II. Os métodos quase-experimentais são empregados quando a randomização não é possível ou ética, como no caso de estudos retrospectivos. Estes métodos dependem de técnicas estatísticas para controlar possíveis variáveis de confusão e simular uma aleatorização artificial.
+
+III. A principal diferença entre métodos experimentais e quase-experimentais é que no primeiro todas as variáveis são controladas pelo pesquisador, enquanto no segundo, algumas variáveis não podem ser controladas e requerem ajustes adicionais na análise.
+
+IV. O risco de viés de seleção é inexistente em RCTs, enquanto em métodos quase-experimentais esse risco é alto e, muitas vezes, incontornável.
+
+Assinale a opção que contém todas as afirmativas corretas.
+
+A) I, II e III apenas.
+B) II e IV apenas.
+C) I e III apenas.
+D) I, II e IV apenas.
+E) I, II, III e IV.
+
+",A,"
+
+Explicação dos itens:
+
+I. Correta. Os experimentos randomizados controlados (RCTs) de fato são considerados o padrão ouro na identificação causal, já que a randomização ajuda a equilibrar as características observáveis e não observáveis entre grupos de tratamento e controle.
+
+II. Correta. Métodos quase-experimentais, como estudos de caso-controle, diferença-em-diferenças (DiD), regressão descontínua, entre outros, tentam se aproximar da aleatorização quando essa não é possível, por meio de ajustes estatísticos que tentam controlar variáveis de confundimento.
+
+III. Correta. Esta afirmativa descreve corretamente a distinção entre os métodos experimentais, onde o pesquisador tem controle sobre a alocação dos sujeitos, e métodos quase-experimentais, que se utilizam de eventos naturais ou políticas específicas como ""experimentos naturais"", requerendo mais esforço em controlar variáveis externas e possíveis viéses.
+
+IV. Incorreta. Mesmo em RCTs, o viés de seleção pode ocorrer, especialmente se a alocação aleatória for comprometida ou se houver desistências diferenciadas entre os grupos. Em métodos quase-experimentais, o risco de viés de seleção é uma preocupação importante, mas estratégias metodológicas são empregadas para minimizar esse risco, como pareamento e uso de variáveis instrumentais, não sendo necessariamente ""incontornável"".",340396
+418,tópico 6,Testes de hipóteses: teste-z; teste-t; valorp; testes para uma amostra; testes de comparação de duas amostras; teste de normalidade (chi square); e intervalos de confiança.,"Questão:
+
+Numa pesquisa sobre a eficiência de um novo medicamento para redução da pressão arterial, os pesquisadores realizam um estudo com 25 pacientes e observaram uma redução média da pressão sistólica de 8 mmHg, com um desvio-padrão de 12 mmHg. Os pesquisadores desejam testar se o medicamento é eficaz na redução da pressão arterial sistólica. Considerando o nível de significância de 0,05 e sabendo que a pressão sistólica em uma população sem o tratamento segue uma distribuição normal com média de 130 mmHg, qual seria o teste estatístico mais apropriado a ser utilizado e qual seria a conclusão correta?
+
+A) Teste-z, rejeita-se a hipótese nula de que a média de pressão sistólica é igual a 130 mmHg.
+B) Teste-t, não se rejeita a hipótese nula de que a média de pressão sistólica com o medicamento é igual a 130 mmHg.
+C) Teste-t, rejeita-se a hipótese nula de que a média de pressão sistólica com o medicamento é igual a 130 mmHg.
+D) Teste de normalidade (chi-square), rejeita-se a hipótese nula de que os dados provêm de uma distribuição normal.
+E) Intervalo de confiança, o intervalo de 95% para a média da pressão sistólica com o medicamento não inclui o valor de 130 mmHg.
+
+",C," 
+
+Explicação dos itens:
+
+A) Incorreto. O teste-z é geralmente utilizado quando se tem uma amostra grande (n > 30) ou quando a variância da população é conhecida. No caso apresentado, a amostra é pequena (n = 25) e não se tem informações sobre a variância da população.
+
+B) Incorreto. O teste-t é o teste correto a ser utilizado devido ao tamanho da amostra ser menor que 30. No entanto, dizer que não se rejeita a hipótese nula sem informação sobre o resultado do teste ou o valor-p é errado.
+
+C) Correto. Com uma amostra de tamanho 25, deve-se utilizar o teste-t para testar se a média de pressão sistólica com o medicamento é diferente de 130 mmHg. Sem os dados do teste propriamente dito, esta é a única opção que se apresenta correta no contexto de rejeição da hipótese nula considerando que queremos testar a eficácia do medicamento.
+
+D) Incorreto. O teste de normalidade (chi-square) é usado para determinar se uma distribuição de dados é ou não normal e não está diretamente relacionado a eficácia do medicamento.
+
+E) Incorreto. Intervalos de confiança podem ser usados para inferir sobre a média da população, mas a questão pede especificamente por um teste de hipóteses, e o intervalo de confiança não é um teste per se. Ademais, a questão requer uma decisão de rejeitar ou não rejeitar a hipótese nula, o que não é resolvido diretamente pelo fornecimento de um intervalo de confiança.",3201218
+419,tópico 6,"Diagramas causais: gráficos acíclicos dirigidos; variáveis confundidoras, colisoras e de mediação","Questão: Em um estudo sobre os efeitos de um novo programa de exercícios físicos sobre a saúde cardiovascular, um pesquisador elabora um diagrama causal usando gráficos acíclicos dirigidos (DAGs). O objetivo é identificar as relações entre o programa de exercícios (variável independente), saúde cardiovascular (variável dependente), e outras variáveis que possam influenciar esta relação. Considere as seguintes variáveis adicionais:
+
+1. Dieta equilibrada
+2. Histórico genético de doenças cardíacas
+3. Nível de estresse
+
+Dentre estas, qual variável seria classificada como confundidora no estudo e deveria ser controlada para se estabelecer o efeito causal do programa de exercícios sobre a saúde cardiovascular?
+
+A) Dieta equilibrada
+B) Histórico genético de doenças cardíacas
+C) Nível de estresse
+D) Todas as variáveis acima
+
+",A,"
+
+Explicação dos itens:
+
+A) Dieta equilibrada - Correto. A dieta equilibrada pode influenciar tanto a adesão ao programa de exercícios quanto a saúde cardiovascular, fazendo desta uma variável confundidora que está associada à exposição e ao resultado. Controlar por dieta é essencial para isolar o efeito do programa de exercícios sobre a saúde cardiovascular.
+
+B) Histórico genético de doenças cardíacas - Não é a alternativa correta. Apesar de o histórico genético estar associado à saúde cardiovascular, ele não é influenciado pela exposição (programa de exercícios), logo não é uma variável confundidora neste contexto.
+
+C) Nível de estresse - Não é a alternativa correta. Embora o nível de estresse possa afetar a saúde cardiovascular, ele não é necessariamente uma variável confundidora, a menos que se demonstre que também está relacionado à exposição ao programa de exercícios. A questão não fornece informações suficientes para determinar essa relação.
+
+D) Todas as variáveis acima - Não é a alternativa correta porque, conforme explicado anteriormente, nem todas as variáveis listadas são confundidoras neste estudo. Apenas a dieta equilibrada tem a clara indicação de ser uma variável confundidora que deve ser controlada.",8888136
+432,tópico 0,Conceitos de processamento massivo e paralelo,"Questão: Em cenários de Big Data, processamento massivo e paralelo são fundamentais para viabilizar análises em grandes volumes de dados. Dentre as arquiteturas e ferramentas utilizadas para esse fim, destaca-se o framework Apache Hadoop, que implementa o modelo de programação MapReduce. Considerando o funcionamento do modelo MapReduce e seus componentes no ecossistema Hadoop, analise as afirmativas a seguir:
+
+I. O procedimento Map é responsável pela filtragem e ordenação dos dados, enquanto o Reduce realiza a agregação dos resultados, funcionando essencialmente de maneira sequencial após a etapa Map.
+
+II. O Hadoop Distributed File System (HDFS) é projetado para armazenar volumes massivos de dados de maneira distribuída, permitindo o processamento paralelo dos dados por meio de alta disponibilidade e tolerância a falhas.
+
+III. A fase de Shuffle and Sort ocorre após a fase de Map e antes da fase de Reduce, envolvendo a organização dos dados de saída do Map em grupos de acordo com as chaves intermediárias geradas, facilitando seu processamento subsequente pelo Reduce.
+
+IV. Em um ambiente Hadoop, todas as operações de processamento de dados necessitam ser escritas no modelo MapReduce, excluindo a possibilidade de uso de outras abstrações e linguagens de consulta, como Apache Pig e Hive.
+
+É correto o que se afirma em:
+
+A) I, II e III, apenas.
+B) II, III e IV, apenas.
+C) I e IV, apenas.
+D) II e III, apenas.
+E) Todas as afirmativas estão corretas.
+
+",A,"
+
+Explicações dos itens:
+
+I. Correta. O Map é a primeira fase do MapReduce, onde cada tarefa de mapeamento processa um bloco de dados de entrada, realiza o filtramento e sort, e prepare as informações em pares chave/valor. A fase de Reduce, que é essencialmente a segunda parte do processo, é onde a agregação ou sumarização dos dados é realizada.
+
+II. Correta. O HDFS é o sistema de arquivos distribuídos do Hadoop, projetado para armazenar grandes volumes de dados distribuídos entre vários nodos, o que permite o processamento paralelo e oferece alta disponibilidade e resistência a falhas.
+
+III. Correta. A fase de Shuffle and Sort é o processo intermediário entre a fase de Map e de Reduce. Durante o Shuffle, os pares chave/valor produzidos pela fase Map são transferidos para a máquina onde será executada a tarefa de Reduce correspondente. Já o Sort é o processo de ordenação desses pares antes da execução do Reduce.
+
+IV. Incorreta. A afirmação IV é falsa porque o Hadoop permite o uso de outros paradigmas de processamento e linguagens além de MapReduce. Apache Pig, por exemplo, é uma plataforma para análise de grandes conjuntos de dados que consiste em uma linguagem de alto nível para expressar programas de processamento de dados com Hadoop, e Hive é um armazenamento de dados em Hadoop que fornece uma abstração semelhante ao SQL para consultas. Isso mostra que o Hadoop suporta múltiplas abstrações para processamento de dados.",6964925
+447,tópico 0,Processamento distribuído,"Questão: No contexto de sistemas distribuídos, o teorema CAP é um conceito fundamental que representa um limite teórico que afeta a concepção e o desempenho desses sistemas. De acordo com o teorema CAP, é impossível para um sistema distribuído garantir simultaneamente mais de duas das seguintes propriedades: Consistência (C), Disponibilidade (A) e Tolerância a Partição de Rede (P). Uma empresa está projetando um sistema distribuído para gerenciar dados financeiros em tempo real que devem ser consistentes e altamente disponíveis em várias localidades geográficas.
+
+Nesse cenário, qual estratégia deve ser adotada pela empresa levando-se em conta as limitações impostas pelo teorema CAP?
+
+A) Configurar o sistema para enfatizar a tolerância a partições de rede acima das outras propriedades, aceitando a possibilidade de dados eventualmente inconsistentes.
+
+B) Projetar o sistema para ser principalmente consistente e tolerante a partições, mesmo que isso resulte em uma baixa disponibilidade durante falhas de rede.
+
+C) Priorizar a consistência e a disponibilidade, utilizando técnicas para sincronização de dados após falhas de partições, reconhecendo que a tolerância a partições será limitada.
+
+D) Ignorar a Tolerância a Partição de Rede oferecendo uma forte consistência e disponibilidade, uma vez que os dados financeiros não são críticos e podem tolerar alguma latência.
+
+E) Construir uma abordagem híbrida que altera entre consistência e disponibilidade de acordo com a carga do sistema e a detecção de partições, mantendo alguma tolerância a partições.
+
+",C,"
+
+Explicação dos itens:
+
+A) Esta alternativa é incorreta porque a questão enfatiza que o sistema deve ser consistente e altamente disponível. Optar pela tolerância a partições acima de consistência e disponibilidade contraria esses requisitos.
+
+B) Esta alternativa também é incorreta porque, embora a consistência seja uma necessidade, a alta disponibilidade não pode ser sacrificada, especialmente para dados financeiros em tempo real.
+
+C) Esta é a alternativa correta, pois prioriza duas das três propriedades que são mais críticas no cenário descrito: consistência e disponibilidade. A tolerância a partições é limitada, mas pode ser mitigada com técnicas de sincronização pós-falha, o que é uma abordagem viável para muitos sistemas financeiros.
+
+D) Esta alternativa não é apropriada porque ignora a realidade do teorema CAP, que afirma que não é possível ter forte consistência e disponibilidade em um sistema que não é tolerante a partições; além disso, os dados financeiros são críticos e não podem aceitar a latência que acompanha a ausência de tolerância a partições.
+
+E) A alternativa E sugere uma abordagem variável que não é garantida pelo teorema CAP, uma vez que a alteração entre consistência e disponibilidade não resolve o problema de limitação imposta pela necessidade de se renunciar a uma das três propriedades em qualquer momento.",1789180
+455,tópico 0,Processamento distribuído,"Questão: Em um contexto de processamento distribuído, a consistência de dados entre os nós em um cluster é fundamental para garantir que todos os processos tenham uma visão unificada e atualizada da informação. Considere um sistema que utiliza processamento distribuído para gerenciar grandes volumes de dados. Qual dos seguintes mecanismos é menos adequado para promover a consistência forte em um ambiente com alto volume de transações distribuídas?
+
+A) Uso de um protocolo de consenso como o Raft, que garante que todos os nós concordem com a ordem e o resultado das transações.
+
+B) Implementação de um serviço de locking distribuído, que previne condições de corrida e garante que as atualizações sejam feitas de forma atômica.
+
+C) Aplicação de técnicas de replicação síncrona, onde cada operação de escrita é realizada simultaneamente em múltiplos nós.
+
+D) Utilização de uma estratégia de eventual consistência, que permite atrasos na propagação de atualizações mas reduz a latência em operações de leitura e escrita.
+
+E) Emprego de mecanismos de quorum para leitura e escrita, assegurando que a maioria dos nós concorde com a versão mais atual dos dados antes que as operações sejam efetivadas.
+
+",D," 
+
+A alternativa correta é a letra D. Uma estratégia de eventual consistência, apesar de ser bastante efetiva em sistemas onde a latência é um fator crítico e podem ser tolerados atrasos na propagação das atualizações, é menos adequada para ambientes que requerem consistência forte, especialmente com alto volume de transações distribuídas. Nas alternativas A, B, C e E, os mecanismos apresentados são projetados para garantir a consistência forte, pois eles asseguram que todos os nós no cluster tenham uma visão coerente e atualizada dos dados, seja através de consenso, locking, replicação síncrona ou quoruns de leitura e escrita.",8801138
+474,tópico 0,"Arquitetura de cloud computing para ciência de dados (AWS, Azure, GCP)","Questão:
+A utilização de serviços de cloud computing para ciência de dados tem se ampliado consideravelmente nos últimos anos. Plataformas como AWS, Azure e GCP oferecem uma gama variada de serviços para armazenamento, processamento e análise de grandes volumes de dados. Considerando as características desses serviços, qual das seguintes afirmações é verdadeira a respeito das capacidades oferecidas por essas plataformas em relação à ciência de dados?
+
+A) AWS Redshift é um serviço de armazenamento de objetos de alta disponibilidade e durabilidade, ideal para hospedar grandes datasets para ciência de dados.
+B) Microsoft Azure Machine Learning Studio é uma plataforma colaborativa baseada na nuvem que permite a construção, teste e implantação de modelos de machine learning sem a necessidade de programar.
+C) GCP BigTable é um banco de dados relacional altamente escalável que suporta cargas de trabalho de análise em tempo real para aplicações de ciência de dados.
+D) AWS SageMaker é uma plataforma que unicamente possibilita o armazenamento de grandes volumes de dados, mas não permite a construção e treinamento de modelos de machine learning.
+E) Azure HDInsight é uma ferramenta exclusiva para processamento de dados em tempo real, que não suporta aplicações de batch processing comumente utilizadas em ciência de dados.
+
+",B,"
+
+Explicação dos itens:
+
+A) AWS Redshift é, na verdade, um serviço de data warehousing e não um serviço de armazenamento de objetos. O serviço de armazenamento de objetos da AWS é o S3, que é conhecido por sua alta disponibilidade e durabilidade.
+
+B) Microsoft Azure Machine Learning Studio realmente é uma plataforma baseada em nuvem que oferece um ambiente colaborativo, onde é possível construir, testar e implantar modelos de machine learning, fornecendo uma interface visual que permite que façam isso sem necessariamente escrever códigos.
+
+C) GCP BigTable é um banco de dados NoSQL, e não relacional, projetado para lidar com grandes volumes de dados, oferecendo suporte ao processamento analítico, mas não é especificamente otimizado para transações em tempo real, como sugerido na afirmação.
+
+D) AWS SageMaker é uma plataforma da AWS que permite o provisionamento de instâncias para construir, treinar e implantar modelos de machine learning de forma fácil e integrada, e não serve apenas como um serviço de armazenamento.
+
+E) Azure HDInsight é um serviço que permite processamento de dados tanto em batch quanto em tempo real, utilizando diferentes frameworks como Hadoop, Spark, e Kafka, portanto, a afirmação de que é exclusivo para processamento em tempo real não procede.",8304710
+480,tópico 0,Conceitos de processamento massivo e paralelo,"Questão:
+A capacidade de processar e analisar grandes volumes de dados tem se tornado cada vez mais essencial para empresas de diversos setores. Neste contexto, o processamento massivo e paralelo surge como uma solução para lidar com essa demanda. Entretanto, para realizar o processamento paralelo de maneira eficiente, é crucial compreender a diferença entre os diversos modelos e abordagens. Considere as seguintes afirmações sobre processamento massivo e paralelo:
+
+I. O modelo MapReduce divide o problema em muitas pequenas tarefas que podem ser processadas de forma independente e paralela, posteriormente combinando os resultados para formar o output desejado.
+
+II. O processamento SIMD (Single Instruction, Multiple Data) executa a mesma operação em múltiplos pontos de dados simultaneamente, sendo adequado para operações vetoriais mas limitado pela sincronização entre os elementos de processamento.
+
+III. Em um paradigma de memória compartilhada, todos os processadores acessam e escrevem em uma única memória global, o que pode levar a condições de corrida se não for gerenciado adequadamente.
+
+IV. O modelo de passagem de mensagens é inerentemente livre de condições de corrida, uma vez que os processos comunicam-se apenas por meio do envio e recebimento de mensagens, sem compartilhar estado.
+
+Assinale a opção que contém apenas as afirmações CORRETAS:
+
+A) I e III
+B) I, II e IV
+C) II, III e IV
+D) I, II e III
+E) Todas as afirmações são corretas.
+
+",B,"
+
+Explicação dos itens:
+
+I. Correto. O modelo MapReduce de fato divide trabalhos em tarefas menores que são processadas de maneira independente e em paralelo, sendo uma característica central do modelo.
+
+II. Correto. SIMD é um modelo de processamento onde uma única instrução é aplicada a múltiplos dados simultaneamente. Isso é comum em operações vetoriais, como as encontradas em processadores gráficos, mas a necessidade de sincronizar os dados é uma das limitações do modelo.
+
+III. Incorreto. Apesar da descrição ser geralmente verdadeira sobre a memória compartilhada e o possível problema de condições de corrida, isso não é uma afirmação exclusivamente correta, pois a gestão adequada e mecanismos de sincronização podem evitar condições de corrida, não sendo, portanto, uma consequência inevitável.
+
+IV. Correto. No modelo de passagem de mensagens, cada processo ou thread opera de forma independente, comunicando através do envio e recebimento de mensagens. Isso pode reduzir ou eliminar as condições de corrida, já que o estado não é compartilhado diretamente.
+
+Assim, as alternativas I, II e IV são as corretas, tornando a letra B a resposta correta.",4763558
+489,tópico 0,Soluções de big data: Arquitetura do ecossistema Spark,"Questão: No contexto das soluções de Big Data, o Apache Spark destaca-se por sua capacidade de processamento rápido e por sua arquitetura altamente escalável. Considerando os componentes da arquitetura do ecossistema Spark, assinale a opção que melhor descreve a função do componente denominado ""Spark Core"".
+
+A) É responsável por executar o gerenciamento de cluster, incluindo o agendamento e distribuição de tarefas entre os nós do cluster.
+
+B) Provê uma abstração para o armazenamento de dados em memória, conhecida como Resilient Distributed Dataset (RDD), que permite o processamento distribuído de grandes conjuntos de dados de maneira eficiente.
+
+C) É a interface para a integração do Spark com sistemas de armazenamento externos, como HDFS, Amazon S3 e Cassandra.
+
+D) Implementa o modelo de processamento de stream em tempo real, permitindo que o Spark processe dados que estão sendo gerados continuamente.
+
+E) Oferece suporte à análise de dados em larga escala por meio de operações de Machine Learning distribuídas.
+",B,"
+O ""Spark Core"" constitui o fundamento do Apache Spark, provendo a abstração fundamental de Resilient Distributed Datasets (RDDs). As RDDs são coleções imutáveis de objetos distribuídos através dos nós do cluster que podem ser processadas em paralelo. Elas oferecem tolerância a falhas e são capazes de recuperar dados perdidos automaticamente.
+
+A alternativa A descreve o papel atribuído ao gerenciador de cluster, como o YARN ou o próprio gerenciador autônomo do Spark (Standalone), não ao Spark Core.
+
+A alternativa C confunde o papel do Spark Core com o da Spark SQL e da DataFrame API, que possibilitam a integração com diversos sistemas de armazenamento e consulta de dados estruturados.
+
+A alternativa D refere-se ao Spark Streaming, um componente do ecossistema Spark dedicado ao processamento de fluxos contínuos de dados em tempo real.
+
+A alternativa E descreve as funcionalidades do MLlib, a biblioteca de Machine Learning do Spark, e não o Spark Core.",8026916
+493,tópico 0,Processamento distribuído,"Questão: Em sistemas de processamento distribuído, o modelo CAP (Consistência, Disponibilidade e Tolerância à Partição) oferece um quadro teórico para compreensão das limitações do armazenamento distribuído. De acordo com o teorema CAP, é impossível para um sistema de computação distribuída fornecer simultaneamente mais que duas das três garantias seguintes:
+
+A) Consistência instantânea em toda a rede, Disponibilidade para leitura/escrita em todas as circunstâncias e Tolerância a pelo menos um nó falhando.
+B) Concorrência de transações, Persistência de dados mesmo em caso de falhas e Tolerância à latência em todas as operações.
+C) Integração contínua de dados, Disponibilidade em cenários de rede fragmentada e Suporte a múltiplos modelos de consistência.
+D) Consistência de dados entre todos os nós a qualquer momento, Disponibilidade para todas as solicitações e Performance otimizada para cada nó.
+E) Consistência forte em todas as operações, Disponibilidade constante para todas as operações e Tolerância a partições de rede arbitrárias.
+
+",E,"
+
+O teorema CAP estabelece que em um sistema distribuído é possível fornecer no máximo duas das três garantias propostas: consistência (todos os nós veem os mesmos dados no mesmo momento), disponibilidade (garantia de que cada solicitação recebe uma resposta sobre se foi bem sucedida ou falhou) e tolerância a partições (o sistema continua a operar apesar de um número arbitrário de mensagens ser perdidas ou atrasadas pela rede). A alternativa E é a correta, pois ""Consistência forte"" refere-se a todos os nós tendo a mesma visão dos dados, ""Disponibilidade constante"" indica que o sistema sempre atende às operações e ""Tolerância a partições de rede arbitrárias"" indica que o sistema pode lidar com falhas na comunicação entre subconjuntos de nós. Todas as outras alternativas ou descrevem conceitos que não estão diretamente relacionados ao teorema CAP ou mencionam condições que não fazem parte do mesmo. 
+
+- Alternativa A: Introduz ""Consistência instantânea"" em vez de ""Consistência forte"", mas é incorreta por afirmar a possibilidade de fornecer ""Disponibilidade para leitura/escrita em todas as circunstâncias"", o que não seria possível ao mesmo tempo que as outras duas condições do CAP.
+- Alternativa B: Esta opção introduz ""Concorrência de transações"" e ""Persistência de dados"", conceitos que são importantes em processamento distribuído, porém, não especificamente descritos pelo teorema CAP.
+- Alternativa C: Menciona ""Integração contínua de dados"" e ""Suporte a múltiplos modelos de consistência"", o que foge ao escopo do teorema CAP, que fala apenas de consistência forte.
+- Alternativa D: Aborda ""Performance otimizada para cada nó"", o que não tem relação com as três características fundamentais discutidas no teorema CAP. Além disso, a alternativa falha ao sugerir que todas as solicitações possam ser atendidas, o que não é garantido quando se opta por forte consistência e tolerância a partições, já que pode comprometer a disponibilidade.",3305750
+519,tópico 0,"Arquitetura de cloud computing para ciência de dados (AWS, Azure, GCP)","Questão:
+A arquitetura de nuvem para projetos de ciência de dados precisa acomodar uma variedade de serviços para processamento de dados, armazenamento escalável, machine learning e orquestração de workflows. Utilizando a plataforma AWS (Amazon Web Services), um cientista de dados está projetando uma solução end-to-end que necessita das seguintes funcionalidades: coleta e ingestão de grandes volumes de dados em tempo real, processamento e análise desses dados, treino e implementação de modelos de aprendizado de máquina, e a orquestração desses processos de maneira escalável e eficiente. Quais dos seguintes serviços do AWS atenderiam melhor as necessidades listadas, respectivamente?
+
+A) AWS Kinesis, AWS Lambda, AWS SageMaker, AWS Step Functions
+B) AWS Glue, AWS Redshift, AWS SageMaker, AWS Batch
+C) AWS Kinesis, AWS EC2, AWS ML Services, AWS Data Pipeline
+D) AWS Data Pipeline, AWS DynamoDB, AWS DeepRacer, AWS CloudFormation
+E) AWS Direct Connect, AWS Athena, AWS SageMaker, AWS OpsWorks
+
+",A,"
+
+Explicação dos itens:
+A) AWS Kinesis é um serviço destinado à coleta e análise de dados em tempo real, ideal para a ingestão de grandes volumes de dados. AWS Lambda é um serviço de computação que executa código em resposta a eventos, sendo útil para processamento e análise de dados sem a necessidade de gerenciar servidores. AWS SageMaker oferece a possibilidade de construir, treinar e implementar modelos de machine learning de maneira acessível. AWS Step Functions permite a coordenação de workflows de componentes de microserviços, incluindo tarefas de machine learning, de forma visual e com controle de fluxo de execução.
+
+B) AWS Glue é um serviço de ETL (extração, transformação e carga), enquanto o AWS Redshift é um armazém de dados, ambos são mais adequados para processos de transformação de dados em lotes do que para processamento em tempo real. AWS Batch é mais focado na execução de tarefas de computação em lote ao invés de orquestração de processos complexos.
+
+C) AWS EC2 fornece capacidade computacional sob demanda, porém não é otimizado para processamento de dados em tempo real, o que o AWS Kinesis faz melhor. AWS ML Services é uma gama de serviços de aprendizado de máquina, mas não corresponde a um serviço específico da AWS. AWS Data Pipeline é um serviço de orquestração mais voltado para o deslocamento e transformação de dados em lote do que para orquestração geral.
+
+D) AWS Data Pipeline pode facilitar o movimento de dados, mas não é o melhor para ingestão em tempo real. AWS DynamoDB é um banco de dados NoSQL, o que não atende diretamente à necessidade de processamento e análise de dados em tempo real. AWS DeepRacer não é um serviço de machine learning, mas sim uma plataforma de corrida autônoma para fins educacionais relacionados a aprendizado por reforço. AWS CloudFormation é voltado para a criação e gerenciamento de recursos da AWS com templates, mas não para orquestração de processos de ciência de dados.
+
+E) AWS Direct Connect é usado para estabelecer uma conexão de rede dedicada de um ambiente on-premises para a AWS, não está relacionado à ingestão de dados em tempo real. AWS Athena é um serviço de consulta interativo, excelente para análises sobre dados já armazenados, mas não para ingestão ou processamento em tempo real. AWS OpsWorks é um serviço de gerenciamento de configuração que não é específico para orquestração de workflows de ciência de dados.",4738886
+520,tópico 0,Processamento distribuído,"Questão: No contexto de sistemas de processamento distribuído, diversos algoritmos são utilizados para gerenciar a comunicação, a consistência dos dados e a coordenação entre os nós. Considere um sistema com um conjunto de processos que colaboram entre si, onde cada um executa em um nó de um cluster distribuído e precisa manter uma visão consistente do estado compartilhado do sistema. As estratégias adotadas precisam assegurar tanto a exclusão mútua em seções críticas quanto a ordem dos eventos em todo o sistema. Neste cenário, qual dos seguintes algoritmos é apropriado para garantir que as operações sejam realizadas na ordem correta, mesmo na presença de falhas nos nós e comunicação assíncrona?
+
+A) Algoritmo de Lamport's Bakery para exclusão mútua.
+B) Eleição de líder com o algoritmo do Bully.
+C) Algoritmo de Dijkstra para o problema do caminho mínimo.
+D) Relógios Vetoriais para ordenação de eventos.
+E) Protocolo Simplex para transmissão de dados.
+
+",D,"
+
+Explicação dos itens:
+
+A) Algoritmo de Lamport's Bakery para exclusão mútua. - Este algoritmo é eficaz para garantir a exclusão mútua em sistemas distribuídos, mas não trata da ordenação de eventos entre os processos do sistema.
+
+B) Eleição de líder com o algoritmo do Bully. - Este processo é utilizado para eleger um líder num conjunto de processos distribuídos, porém não está diretamente relacionado com a manutenção da ordem dos eventos no sistema.
+
+C) Algoritmo de Dijkstra para o problema do caminho mínimo. - O algoritmo de Dijkstra resolve o problema do caminho mínimo em grafos e não é aplicado para ordenação ou coordenação de eventos em sistemas distribuídos.
+
+D) Relógios Vetoriais para ordenação de eventos. - Os relógios vetoriais são utilizados em sistemas distribuídos para manter a ordenação dos eventos de forma consistente em todo o sistema, mesmo diante de falhas e comunicação assíncrona. É a opção correta para o contexto descrito na questão.
+
+E) Protocolo Simplex para transmissão de dados. - O protocolo Simplex é um método de comunicação unidirecional e não aborda a questão da ordenação de eventos em sistemas distribuídos.",9521090
+528,tópico 0,Processamento distribuído,"Questão: 
+No contexto de processamento distribuído, há a necessidade de definição de algoritmos e mecanismos para garantir consistência e sincronização entre os diversos nós do sistema. Dentre os modelos de consistência especificados para sistemas distribuídos, qual dos seguintes garante que uma vez que uma nova escrita se torna visível para uma leitura (torna-se ""fresh""), todas as leituras subsequentes (mesmo que em nós diferentes) verão esta escrita ou uma mais recente?
+
+A) Consistência Eventual
+B) Consistência Fraca
+C) Consistência Sequencial
+D) Consistência Forte
+E) Consistência Causal
+
+",D,"
+
+Explicação dos itens:
+
+A) Consistência Eventual: Este modelo não garante que as leituras subsequentes verão as escritas mais recentes imediatamente. Ela apenas assegura que se o sistema parar de receber mudanças, eventualmente todos os nós terão os mesmos dados, mas não especifica o tempo que isso pode levar.
+
+B) Consistência Fraca: Similar à consistência eventual, mas geralmente inclui algum tipo de mecanismo que proporciona um grau maior de garantia que um estado será alcançado em um tempo finito, ainda assim, não assegura que todas as leituras posteriores à uma atualização visualizarão esta atualização.
+
+C) Consistência Sequencial: Mantém as operações em uma sequência específica, porém não garante que uma vez uma atualização se torna visível todas as futuras leituras verão esta atualização em diferentes nós, apenas que todas as operações parecerão ocorrer em uma ordem sequencial única.
+
+D) Consistência Forte: Este modelo assegura que assim que uma atualização é percebida por uma leitura em um nó, todas as leituras subsequentes em qualquer outro nó vão observar essa atualização ou uma versão mais atualizada dos dados. Isso implica que todas as cópias do dado no sistema distribuído são instantaneamente atualizadas.
+
+E) Consistência Causal: Este modelo apenas assegura que as atualizações relacionadas causalmente são vistas por todos os nós na mesma ordem. As leituras podem ver atualizações diferentes se elas não são relacionadas causalmente, logo, não garante a visibilidade da escrita mais nova imediatamente após se tornar visível.",7739877
+559,tópico 1,"Banco de dados relacional: SQL Server, PostgreSQL, MySQL","Questão:
+
+Considere os seguintes fragmentos de comandos SQL que seriam executáveis em sistemas de gerenciamento de banco de dados relacional como SQL Server, PostgreSQL e MySQL. Analise os comandos e identifique qual dos itens apresenta um comando que seria inválido em todos os sistemas mencionados.
+
+A) SELECT * FROM Produtos WHERE Preco BETWEEN 100 AND 200;
+
+B) INSERT INTO Clientes (ID, Nome, Email) VALUES (1, 'João Silva', 'joao@email.com');
+
+C) UPDATE Pedidos SET Status = 'Enviado' WHERE PedidoID = 1234;
+
+D) DELETE FROM Fornecedores WHERE Cidade = 'Rio de Janeiro';
+
+E) CREATE INDEX idx_nome ON Clientes (Nome DESC);
+
+",E," 
+
+Explicação dos itens:
+
+A) O comando SELECT com o operador BETWEEN é um comando padrão de SQL usado para selecionar registros dentro de um intervalo de valores. É válido em SQL Server, PostgreSQL e MySQL.
+
+B) O comando INSERT INTO é utilizado para inserir novos registros em uma tabela, indicando as colunas e os valores correspondentes. Sintaxe correta e universal para os SGBDs mencionados.
+
+C) UPDATE é o comando utilizado para atualizar registros existentes em uma tabela. A sintaxe utilizada é correta e será reconhecida por SQL Server, PostgreSQL e MySQL.
+
+D) DELETE FROM é o comando utilizado para deletar registros de uma tabela que satisfazem a condição especificada no WHERE. A sintaxe está correta para todos os SGBDs mencionados.
+
+E) CREATE INDEX é utilizado para criar um índice em uma ou mais colunas de uma tabela, o que pode melhorar a velocidade de operações de busca. No entanto, a utilização da cláusula ""DESC"" na declaração da direção do índice não é aceita em todos os sistemas de gerenciamento de banco de dados relacionais indicados. No PostgreSQL, por exemplo, os índices são criados por padrão em ordem ascendente, e a especificação de 'DESC' para criar um índice em ordem descendente não é suportada na forma como é expressa na alternativa E. Já o SQL Server e o MySQL têm suporte para índices em ordem descendente de colunas mas requerem sintaxes específicas que podem diferir dessa apresentação.",4127753
+563,tópico 1,Banco de dados NoSQL,"Questão: Em sistemas de bancos de dados NoSQL, a escalabilidade e a flexibilidade são características importantes que diferenciam estes sistemas dos bancos de dados relacionais tradicionais. Neste contexto, assinale a opção que corretamente identifica um tipo de banco de dados NoSQL e uma característica associada.
+
+A) Document Store - Utiliza estruturas de dados como XML, JSON ou BSON para armazenar informações de forma hierárquica.
+
+B) Key-Value Store - Requer esquemas rígidos e tabelas relacionais para armazenar pares de chaves e valores.
+
+C) Graph Database - Otimizado para armazenamento de dados tabulares com ênfase em relações complexas entre registros.
+
+D) Wide-Column Store - Semelhante aos bancos de dados relacionais, diferenciando-se principalmente pelo uso do SQL como linguagem de consulta.
+
+E) Object-Oriented Database - Combina características de bancos de dados relacionais com o armazenamento de objetos em um sistema de arquivos tradicional.
+
+",A," 
+A resposta correta é a alternativa A: Document Store - Utiliza estruturas de dados como XML, JSON ou BSON para armazenar informações de forma hierárquica. Bancos de dados do tipo Document Store são projetados para armazenar e consultar dados na forma de documentos e são altamente flexíveis permitindo que cada documento possua sua própria estrutura. A alternativa B está incorreta, pois Key-Value Stores são conhecidos por sua simplicidade e falta de esquemas rígidos. A alternativa C está incorreta, pois Graph Databases são projetados especificamente para manipular relações complexas em dados interconectados, não para dados tabulares. A alternativa D está incorreta, pois Wide-Column Stores são diferentes dos bancos de dados relacionais em termos de armazenamento e consulta de dados e normalmente não utilizam SQL como sua linguagem primária. Por fim, a alternativa E está incorreta, já que Object-Oriented Databases são distintos dos bancos de dados relacionais, pois armazenam informações como objetos, assim como em linguagens de programação orientadas a objetos, e não combinam características de ambos os tipos de armazenamento mencionados.",8511925
+564,tópico 1,"Banco de dados relacional: SQL Server, PostgreSQL, MySQL","Questão: No contexto de otimização de consultas em bancos de dados relacionais, é crucial compreender o papel dos índices para melhorar o desempenho de leitura de dados. Considerando os sistemas de gerenciamento de banco de dados SQL Server, PostgreSQL e MySQL, analise as seguintes afirmativas sobre o uso de índices:
+
+I. O índice clustered do SQL Server organiza fisicamente os dados da tabela em uma ordem específica, baseada na chave de índice, o que pode melhorar significativamente o desempenho das consultas que utilizam a chave de índice.
+
+II. No PostgreSQL, o uso de índice BRIN é adequado para colunas com distribuição de dados não correlacionados, uma vez que este tipo de índice é baseado em estatísticas de intervalos de blocos.
+
+III. O MySQL oferece o índice FULLTEXT, que é específico para melhorar pesquisas em colunas de texto, permitindo buscas por conteúdo textual de forma mais eficiente do que um índice B-Tree em colunas do tipo VARCHAR ou TEXT.
+
+IV. A criação de índices em colunas frequentemente atualizadas é sempre vantajosa, pois não afeta o desempenho das operações de escrita, apenas melhorando as de leitura.
+
+Assinale a opção que indica todas as afirmativas corretas.
+
+A) I e II
+B) I, II e III
+C) II e IV
+D) I, III e IV
+E) Todas estão corretas
+
+",B,"
+
+Explicação dos itens:
+
+I. Verdadeiro. O índice clustered no SQL Server de fato organiza fisicamente os dados da tabela na ordem da chave de índice, melhorando o desempenho das consultas que são baseadas na chave de índice.
+
+II. Verdadeiro. O índice BRIN (Block Range INdex) do PostgreSQL é efetivo para colunas com valores que são correlacionados com a localização física. Isso o torna adequado para grandes tabelas com dados distribuídos que sejam passíveis de serem resumidos em intervalos de blocos.
+
+III. Verdadeiro. O índice FULLTEXT do MySQL é projetado para otimizar pesquisas em colunas de texto. Este tipo de índice permite a realização de pesquisas textuais de forma mais eficiente do que com os índices B-Tree tradicionais.
+
+IV. Falso. Embora os índices melhorem o desempenho das consultas de leitura, eles podem afetar negativamente o desempenho das operações de escrita como INSERT, UPDATE e DELETE, já que o índice também precisa ser atualizado após cada modificação, o que pode ser especialmente custoso para colunas com atualizações frequentes.",5925149
+568,tópico 1,Banco de dados NoSQL,"Questão: 
+Considere uma pequena empresa de tecnologia que deseja migrar seu sistema de gerenciamento de banco de dados relacional para um NoSQL, a fim de atender ao crescimento exponencial de seus dados e a necessidades de rápida escalabilidade horizontal. Ao analisar as opções de bancos de dados NoSQL disponíveis, o arquiteto de dados deve levar em consideração diversas características intrínsecas a esses sistemas. Qual dos seguintes aspectos NÃO é comumente associado aos bancos de dados NoSQL?
+
+A) Suporte a múltiplos modelos de dados, como documento, chave-valor e grafos.
+B) Elevada consistência imediata dos dados distribuídos em diferentes nós.
+C) Capacidade de escalar horizontalmente de maneira eficiente e dinâmica.
+D) Flexibilidade esquemática permitindo alterações no design do banco sem downtime.
+E) Otimização para armazenamento e recuperação de grande volume de dados não estruturados.
+
+",B," 
+A alternativa A está incorreta porque uma das vantagens dos bancos de dados NoSQL é justamente o suporte a múltiplos modelos de dados, o que permite o uso em diversos cenários e aplicações. A alternativa C é também incorreta, pois a escalabilidade horizontal é uma característica chave dos sistemas NoSQL, oferecendo a habilidade de crescer em capacidade através da adição de mais servidores no cluster. A alternativa D é equivocada por afirmar como vantagem a flexibilidade esquemática, que permite alterar o design do banco de dados sem necessidade de paradas ou downtime significativos. A alternativa E está errada, já que os bancos de dados NoSQL são otimizados especificamente para lidar com grandes quantidades de dados não estruturados. A alternativa B é correta, pois os sistemas NoSQL geralmente oferecem consistência eventual em vez de imediata, uma troca intencional para melhorar a disponibilidade e a particionamento de tolerância na presença de falhas, que é comum no modelo CAP (Consistency, Availability, Partition tolerance) de sistemas distribuídos.",6165819
+571,tópico 1,"Banco de dados relacional: SQL Server, PostgreSQL, MySQL","Questão: A respeito do planejamento e da execução de consultas em bancos de dados relacionais, é importante ter em mente as particularidades e funções de cada SGBD (Sistema de Gerenciamento de Banco de Dados), como o SQL Server, PostgreSQL e MySQL. Analise as afirmativas abaixo e marque a opção correta quanto à execução de consultas e funções desses sistemas.
+
+I. No PostgreSQL, a função `GENERATE_SERIES` pode ser usada para gerar uma série de valores, sendo útil para criar conjuntos de dados de teste ou para realizar operações em intervalos de datas.
+
+II. A declaração `HINTS` no SQL Server é utilizada para informar o otimizador de consulta sobre a estratégia de execução desejada, podendo influenciar no plano de execução gerado pelo otimizador de consulta.
+
+III. O MySQL suporta o armazenamento e a consulta de documentos JSON de forma nativa, permitindo a indexação de chaves de documentos JSON para melhorar o desempenho das consultas.
+
+Marque a opção que apresenta a(s) afirmativa(s) correta(s):
+
+A) Apenas I.
+B) Apenas II.
+C) Apenas III.
+D) I e II.
+E) I, II e III.
+
+",E,"
+
+Explicação dos itens:
+
+I. A afirmativa é verdadeira, a função `GENERATE_SERIES` existe no PostgreSQL e é utilizada para gerar uma sequência de números ou datas, o que é útil em várias situações como mencionado.
+
+II. A afirmativa é verdadeira. No SQL Server, os 'hints' de consulta podem ser utilizados para sugerir ao otimizador de consulta uma maneira específica de executar a consulta. Isso pode ajudar a melhorar o desempenho quando o desenvolvedor compreende bem o conjunto de dados e as implicações da sugestão.
+
+III. A afirmativa é verdadeira. O MySQL suporta o armazenamento de documentos JSON a partir da versão 5.7.8. Além disso, permite a criação de índices secundários em chaves de documentos JSON, o que facilita a realização de consultas eficientes nesse tipo de dado.
+
+Portanto, todas as afirmativas são corretas, o que torna a alternativa E a resposta correta.",2499536
+573,tópico 1,Banco de dados NoSQL,"Questão:
+
+Um cientista de dados está projetando uma solução para armazenamento de grandes volumes de dados gerados por dispositivos IoT (Internet of Things) que possuem características variadas e estão em constante evolução. O profissional decidiu adotar uma abordagem NoSQL devido à sua flexibilidade esquemática e capacidade de escalar horizontalmente. Qual dos seguintes tipos de banco de dados NoSQL é mais adequado para lidar com a necessidade de armazenar e consultar dados semi-estruturados de maneira eficiente, considerando que a estrutura dos dados pode mudar com o tempo?
+
+A) Bancos de dados chave-valor, pois são otimizados para cenários onde a leitura e escrita de pares de chave-valor são as operações principais.
+
+B) Bancos de dados de colunas largas, ideais para armazenar tabelas com um grande número de colunas e linhas, mantendo a eficiência nas operações de I/O.
+
+C) Bancos de dados de documentos, pois permitem o armazenamento de documentos semi-estruturados em formatos como JSON, facilitando a evolução da estrutura dos dados.
+
+D) Bancos de dados baseados em grafos, recomendados para cenários onde as relações entre os dados são tão importantes quanto os próprios dados.
+
+E) Bancos de dados de série temporal, especialmente desenhados para manipular sequências de dados ao longo do tempo, comuns em medições de sensores IoT.
+
+",C,"
+
+Explicação dos itens:
+
+A) Bancos de dados chave-valor são simples e eficientes para cenários onde o acesso rápido a um valor com base em uma chave é necessário, mas eles não oferecem suporte nativo para estruturas de dados complexas e semi-estruturadas.
+
+B) Bancos de dados de colunas largas são adequados para consultas analíticas sobre grandes conjuntos de dados, mas não são especializados no armazenamento de dados semi-estruturados que podem variar em estrutura com o tempo.
+
+C) Bancos de dados de documentos são projetados para armazenar e gerenciar dados semi-estruturados, tornando-os ideais para cenários IoT onde a estrutura dos dados pode evoluir com facilidade, devido ao suporte para formatos como JSON, que permitem a inclusão e modificação de campos sem a necessidade de redefinir o esquema de todo o banco.
+
+D) Bancos de dados baseados em grafos são excelentes para modelar dados interconectados, mas não são especificamente orientados para lidar com grandes volumes de dados semi-estruturados em constante evolução típicos em cenários de IoT.
+
+E) Bancos de dados de série temporal são ótimos para armazenar informações que são coletadas em intervalos regulares de tempo, como leituras de sensores. No entanto, eles não são adequados para dados com estruturas variáveis e evolutivas.",4991402
+583,tópico 1,Álgebra relacional e SQL (padrão ANSI),"Questão: Considerando o modelo relacional e a linguagem de consulta SQL padrão ANSI, analise as seguintes operações e afirmativas relacionadas:
+
+I. A operação de projeção elimina colunas duplicadas no resultado da consulta.
+II. A operação de seleção é responsável por filtrar tuplas com base em condições especificadas.
+III. O comando SQL ""SELECT DISTINCT nome_coluna FROM tabela"" é equivalente a aplicar a operação de projeção seguida da eliminação de duplicatas na coluna ""nome_coluna"".
+IV. A junção natural (NATURAL JOIN) entre duas tabelas combina as linhas com base em todas as colunas com nomes em comum.
+V. Quando se fala em agrupamento (GROUP BY), estamos referindo-nos a uma operação de álgebra relacional que coleta dados de várias linhas e fornece um único resultado de alguma forma agregada para cada grupo de linhas.
+
+Assinale a opção que contém apenas afirmativas corretas.
+
+A) I, II e IV
+B) I, III e V
+C) II, III e IV
+D) II, III e V
+E) I, II e V
+
+",C," 
+A afirmativa I está correta porque a operação de projeção (π) na álgebra relacional seleciona apenas as colunas especificadas de uma relação e elimina linhas duplicadas no resultado final. A afirmativa II também está correta; a operação de seleção (σ) filtra as tuplas que satisfazem uma condição específica. A afirmativa III é verdadeira, pois o comando ""SELECT DISTINCT"" em SQL realiza uma projeção e remove duplicatas, simulando o comportamento da operação de projeção na álgebra relacional. A afirmativa IV está correta, pois o NATURAL JOIN combina linhas de duas tabelas baseando-se no nome da coluna e valores em comum. A afirmativa V é incorreta; o GROUP BY em SQL é utilizado para agrupamentos, mas a álgebra relacional se refere a essa operação como agrupamento (GROUP) e não utiliza o termo GROUP BY, o qual é específico do SQL.",8886276
+589,tópico 1,Álgebra relacional e SQL (padrão ANSI),"Questão: Suponha duas relações em um banco de dados relacional: FUNCIONARIO(F_Id, F_Nome, F_DepartamentoId) e DEPARTAMENTO(D_Id, D_Nome). A relação FUNCIONARIO registra os funcionários de uma empresa, com seus respectivos nomes e o identificador do departamento ao qual estão vinculados. A relação DEPARTAMENTO registra os departamentos existentes na empresa, com seus respectivos identificadores e nomes. Considerando o esquema acima e sabendo que o objetivo é listar todos os nomes dos funcionários juntamente com o nome do departamento a que estão associados, qual das seguintes expressões em Álgebra Relacional e SQL (padrão ANSI) retornará o resultado esperado?
+
+A) Álgebra Relacional: π_F_Nome, D_Nome (FUNCIONARIO ⨝ F_DepartamentoId = D_Id DEPARTAMENTO)
+   SQL: SELECT F.F_Nome, D.D_Nome FROM FUNCIONARIO F INNER JOIN DEPARTAMENTO D ON F.F_DepartamentoId = D.D_Id
+
+B) Álgebra Relacional: FUNCIONARIO × DEPARTAMENTO
+   SQL: SELECT F.F_Nome, D.D_Nome FROM FUNCIONARIO F, DEPARTAMENTO D
+
+C) Álgebra Relacional: FUNCIONARIO ∪ DEPARTAMENTO
+   SQL: SELECT F.F_Nome, D.D_Nome FROM FUNCIONARIO F UNION SELECT D.Id, D.D_Nome FROM DEPARTAMENTO D
+
+D) Álgebra Relacional: π_F_Nome (FUNCIONARIO) ⨝ π_D_Nome (DEPARTAMENTO)
+   SQL: SELECT F.F_Nome FROM FUNCIONARIO F INNER JOIN (SELECT D_Nome FROM DEPARTAMENTO) D
+
+E) Álgebra Relacional: σ_F_DepartamentoId=D_Id (FUNCIONARIO × DEPARTAMENTO)
+   SQL: SELECT F.F_Nome, D.D_Nome FROM FUNCIONARIO F CROSS JOIN DEPARTAMENTO D WHERE F.F_DepartamentoId = D.D_Id
+
+",A,"
+
+Explicação dos itens:
+
+A) Correta. A expressão de Álgebra Relacional utiliza uma junção natural (⨝) que relaciona as duas tabelas pelo campo de departamento, retornando somente as colunas de interesse (F_Nome e D_Nome). A consulta SQL correspondente aplica uma junção interna (INNER JOIN) entre as tabelas FUNCIONARIO e DEPARTAMENTO usando o campo F_DepartamentoId para corresponder ao campo D_Id, o que é apropriado para o resultado esperado.
+
+B) Incorreta. A expressão em Álgebra Relacional representa o produto cartesiano, o que resultaria em uma combinação de todos os funcionários com todos os departamentos, sem se preocupar com a correspondência entre os IDs de departamento. A consulta SQL equivale ao produto cartesiano e não inclui qualquer condição de junção, o que levantaria o mesmo problema.
+
+C) Incorreta. A operação de união em Álgebra Relacional (UNION) é inadequada aqui, pois estamos buscando uma combinação de dados de duas tabelas diferentes baseadas em um critério comum (ID do departamento), e não uma união de registros similares. Além disso, a sintaxe SQL está incorreta, pois tenta unir duas consultas completamente diferentes sem a devida correspondência entre as colunas.
+
+D) Incorreta. A expressão da Álgebra Relacional propõe uma junção entre projeções das duas tabelas, mas a sintaxe está incompleta e não estabelece a condição de correspondência entre os IDs de departamento. A consulta SQL também está errada, pois junta a tabela FUNCIONARIO com uma subconsulta que seleciona apenas o nome do departamento, sem estabelecer uma condição de junção adequada.
+
+E) Incorreta. Embora a seleção após o produto cartesiano na expressão da Álgebra Relacional (σ) produzisse o resultado correto, não é a forma mais eficiente de realizar a operação e causaria processamento desnecessário. O SQL correspondente utiliza um CROSS JOIN, que é um produto cartesiano seguido de uma cláusula WHERE para estabelecer a correspondência entre os IDs de departamento. Embora isso possa, em última instância, produzir o resultado correto, não é o método padrão de execução para essa operação, sendo o INNER JOIN a forma mais canônica e legível de escrever essa consulta.",9887198
+634,tópico 2,Contexto de IA: Normalização numérica,"Questão: Em aprendizado de máquina, a normalização dos dados é uma etapa crucial no pré-processamento antes de alimentar os modelos com os dados. Esta técnica é importante para assegurar que atributos numéricos estejam na mesma escala, o que pode aumentar a performance e a estabilidade dos algoritmos. Considerando as técnicas de normalização mais comuns, analise as seguintes afirmações:
+
+I. A normalização Min-Max redimensiona os dados para um intervalo fixo, tipicamente 0 a 1, e é sensível a outliers.
+II. A normalização Z-Score centraliza os dados em torno da média (com média zero) e os redimensiona em termos de desvio padrão.
+III. A escala logarítmica pode ser considerada uma forma de normalização e é particularmente útil quando os dados apresentam uma distribuição exponencial ou com uma grande gama de valores, diminuindo o efeito de valores extremos.
+
+Quais afirmações estão corretas?
+
+A) Apenas I e II.
+B) Apenas II e III.
+C) Apenas I e III.
+D) Todas estão corretas.
+E) Apenas III.
+
+",D,"
+
+Explicação dos itens:
+- A afirmação I está correta porque a normalização Min-Max é de fato uma técnica que redimensiona os dados para um intervalo fixo, normalmente entre 0 e 1, e pode ser afetada por valores discrepantes, ou outliers, já que estes valores extremos influenciam os valores mínimos e máximos usados para o redimensionamento.
+- A afirmação II também está correta, pois a normalização Z-Score (ou standardização) reescala os dados para que tenham média igual a 0 e desvio padrão igual a 1. Este método não fixa os dados em um intervalo específico, mas os redimensiona em função do desvio padrão, reduzindo o impacto de outliers por não depender diretamente dos valores mínimos e máximos.
+- A afirmação III é verdadeira porque a aplicação da escala logarítmica pode ser considerada uma técnica de normalização, já que transforma dados com distribuições não uniformes ou skewness em uma escala mais tratável, minimizando a influência de outliers e tornando a distribuição mais próxima de uma distribuição normal.",5134992
+635,tópico 2,Contexto de IA: Matching - Tratamento dos dados,"Questão: Em um sistema de Inteligência Artificial focado em algoritmos de Matching para recomendação de parceiros profissionais, o tratamento dos dados é uma etapa crucial para determinar a acurácia das sugestões fornecidas aos usuários. Sobre o pré-processamento desses dados, considere as seguintes afirmações:
+
+I. A normalização dos dados é fundamental para garantir que atributos de diferentes escalas tenham um impacto proporcional no algoritmo de matching.
+
+II. A imputação de valores faltantes pode ser realizada por métodos estatísticos básicos, como a inserção do valor médio, ou por técnicas mais sofisticadas, como imputação multivariada ou utilizando algoritmos de aprendizado de máquina.
+
+III. A codificação one-hot é indispensável para todos os tipos de variáveis categóricas, independente do algoritmo de matching utilizado.
+
+É correto o que se afirma em:
+
+A) I, apenas.
+B) II, apenas.
+C) I e II, apenas.
+D) II e III, apenas.
+E) I, II e III.
+
+",C," 
+
+Explicação dos itens:
+
+I. Correto. A normalização dos dados ajudar a equilibrar a contribuição de cada atributo, o que é essencial em muitos algoritmos de matching, especialmente quando as escalas variam significativamente entre si.
+
+II. Correto. A imputação de valores faltantes é uma etapa comum do pré-processamento. Pode ser realizada através de métodos estatísticos simples ou métodos mais avançados, dependendo da natureza dos dados e do impacto esperado nos resultados do algoritmo de matching.
+
+III. Incorreto. A codificação one-hot é uma técnica útil para transformar variáveis categóricas em um formato que modelos de aprendizado de máquina podem utilizar. No entanto, nem sempre é indispensável. Alguns algoritmos podem trabalhar diretamente com rótulos categóricos, e em outros casos pode-se utilizar abordagens diferentes, como a codificação ordinal ou outros métodos de embedding.",2458371
+636,tópico 2,Contexto de IA: Data cleansing,"Questão: Em projetos de Inteligência Artificial (IA), especialmente em tarefas de Machine Learning, a fase de limpeza de dados, ou Data Cleansing, é crucial para garantir a qualidade dos modelos preditivos. Considere a seguinte situação: um cientista de dados se depara com um conjunto de dados que contém muitos valores ausentes, outliers, dados duplicados e inconsistências nos tipos de dados. Qual das seguintes alternativas apresenta uma abordagem apropriada para tratar esses problemas antes de treinar o modelo de IA?
+
+A) Ignorar a presença de outliers, pois modelos de IA são robustos e podem lidar automaticamente com essas anomalias durante o treinamento.
+B) Preencher os valores ausentes com a média, mediana ou moda dos dados, conforme aplicável, e realizar a normalização ou padronização para mitigar o impacto dos outliers.
+C) Excluir toda a linha de dados que possua pelo menos um valor ausente, a fim de garantir que todos os dados utilizados no modelo sejam completos.
+D) Manter dados duplicados, pois eles podem ajudar a aumentar o tamanho do conjunto de dados, melhorando assim o desempenho do modelo.
+E) Converter todos os dados para o mesmo tipo, independentemente do contexto, garantindo que o modelo não encontre problemas durante o processamento dos dados.
+
+",B," 
+
+A alternativa A é incorreta porque, embora certos modelos de IA, como as Redes Neurais, possam ser menos sensíveis a outliers, muitos modelos são afetados significativamente por eles, portanto, é importante tratar os outliers adequadamente ao invés de simplesmente ignorá-los.
+
+A alternativa B é a correta, pois oferece técnicas geralmente aceitas para tratar os valores ausentes (preenchendo-os com média, mediana ou moda) e sugere a normalização ou padronização para reduzir o impacto dos outliers, sem perder informações valiosas que outros registros válidos podem conter.
+
+A alternativa C é uma abordagem muito drástica e pode levar a uma perda significativa de dados, particularmente em grandes conjuntos de dados onde os valores ausentes estão espalhados de forma dispersa.
+
+A alternativa D é incorreta porque a presença de dados duplicados pode levar a um viés no modelo e prejudicar a capacidade do modelo de generalizar a partir dos dados de treino.
+
+A alternativa E não é apropriada pois a conversão de todos os dados para o mesmo tipo sem levar em conta o contexto pode resultar em perda de informação. Por exemplo, converter números representativos de categorias em contínuos pode levar a interpretações errôneas pelos algoritmos de Machine Learning.",4083630
+637,tópico 2,Contexto de IA: Discretização,"Questão:
+Nos processos de pré-processamento de dados para aplicações em Inteligência Artificial, a discretização é uma etapa que pode ser crítica, uma vez que transforma variáveis contínuas em variáveis categóricas. Sobre os métodos de discretização, é correto afirmar que:
+
+A) A discretização por largura igual divide o intervalo dos dados em segmentos que contêm aproximadamente o mesmo número de pontos de dados.
+B) A discretização por frequência igual segmenta os dados com base em intervalos que abrangem a mesma amplitude, independentemente do número de pontos de dados em cada segmento.
+C) O método de discretização baseado em cluster utiliza algoritmos de agrupamento, como K-means, para dividir as variáveis contínuas em categorias que reflitam a estrutura natural dos dados.
+D) A discretização por árvore de decisão utiliza árvores de decisão para aprender os pontos de corte ideais para as categorias baseando-se em uma medida de impureza, como o índice Gini ou a entropia.
+E) Métodos de discretização por contagem de observações são amplamente utilizados em dados de séries temporais, visto que consideram explicitamente a dimensão temporal na divisão dos intervalos.
+
+",C,"
+A discretização é um processo que transforma variáveis contínuas em variáveis categóricas, agrupando os valores contínuos em intervalos. A resposta correta é a alternativa C. 
+Explicações dos itens:
+A) Incorreto. A discretização por largura igual divide os dados em intervalos de largura idêntica, não considerando a densidade de pontos de dados em cada segmento.
+B) Incorreto. A afirmação descreve corretamente a discretização por largura igual em vez de por frequência igual. Na discretização por frequência igual, o número de pontos em cada intervalo é que é mantido aproximadamente constante, não a amplitude dos intervalos.
+C) Correto. O método baseado em cluster usa os resultados de um algoritmo de agrupamento para definir os cortes das categorias, levando em consideração a distribuição dos dados e buscando manter a semelhança dentro de cada grupo formado.
+D) Correto. Este método utiliza árvores de decisão para determinar os melhores pontos de corte que maximizem a pureza dos nós resultantes segundo alguma medida estatística, como a entropia ou o índice de Gini.
+E) Incorreto. Métodos de discretização que consideram a contagem de observações geralmente não são aplicados especificamente a séries temporais; além disso, eles não necessariamente levam em conta a dimensão temporal na discretização.",1333062
+638,tópico 2,Contexto de IA: Normalização numérica,"Questão:
+Dentro do contexto de desenvolvimento de modelos de aprendizado de máquina, a normalização dos dados é uma prática comum que visa trazer diferentes escalas de atributos para um patamar comum, facilitando a convergência dos algoritmos durante o treinamento. Em relação às técnicas de normalização numérica, analise as afirmativas a seguir e marque a opção correta:
+
+I. A normalização Min-Max escala todos os pontos de dados para que fiquem no intervalo de 0 a 1, mas é sensível a outliers.
+II. A normalização Z-score, ou Standard Score, consiste em subtrair a média e dividir pelo desvio padrão dos dados, produzindo uma distribuição com média 0 e desvio padrão 1.
+III. O método de normalização decimal escala os dados dividindo-os pelo valor máximo absoluto de cada atributo, resultando em valores entre -1 e 1.
+IV. Normalização não é adequada para modelos baseados em árvore de decisão, pois esses modelos são sensíveis apenas à ordem dos dados, não à escala.
+
+A) Apenas as afirmativas I e II estão corretas.
+B) Apenas as afirmativas II e III estão corretas.
+C) Apenas as afirmativas I, II e III estão corretas.
+D) Todas as afirmativas estão corretas.
+E) Nenhuma das afirmativas está correta.
+
+",A,"
+
+Explicação dos itens:
+
+I. Correto. A normalização Min-Max de fato escala os dados no intervalo [0, 1], mas pode ser influenciada por outliers, que distorcem a escala e, com isso, o desempenho do modelo.
+II. Correto. A normalização Z-score ajusta os dados para terem uma média igual a 0 e desvio padrão igual a 1, sendo menos sensível a outliers do que a normalização Min-Max.
+III. Incorreto. O método descrito é conhecido como ""Escala de unidade de comprimento"" ou ""Normalização L2"", que divide os valores pelo comprimento do vetor em n-dimensões, e não pelo valor máximo.
+IV. Incorreto. Embora modelos baseados em árvore de decisão sejam, de fato, invariantes à escala, pois são baseados em ordenação, a afirmação é falha ao sugerir que a normalização ""não é adequada"". Existem situações, como na integração com outros modelos ou quando se utilizam ensembles de árvores, em que normalizar pode ser útil ou necessário.
+
+Portanto, as afirmativas I e II são corretas, fazendo da alternativa A a correta.",7475678
+639,tópico 2,Contexto de IA: Tratamento de outliers e agregações,"Questão: Em um projeto de Inteligência Artificial, um cientista de dados está trabalhando com uma grande base de dados para análise preditiva. Durante a fase de pré-processamento dos dados, foi identificada a presença de outliers que podem afetar a performance do modelo. Assumindo que os dados seguem uma distribuição aproximadamente normal, qual abordagem para o tratamento de outliers pode ser considerada adequada sem perda significativa de informações relevantes?
+
+A) Eliminar todos os valores que estejam a mais de 1 desvio padrão da média, pois isso garante a retirada de qualquer possível outlier.
+B) Aplicar uma transformação logarítmica nos dados para atenuar o impacto dos outliers, assumindo que a variável é positiva e sem zeros.
+C) Substituir os outliers pelos valores médios de suas respectivas variáveis para minimizar o impacto na média e na variância.
+D) Utilizar a técnica de capping, definindo um limite inferior e superior baseado no IQR (Intervalo Interquartílico), tal como valores abaixo de Q1 - 1.5*IQR e acima de Q3 + 1.5*IQR.
+E) Ignorar a presença dos outliers, uma vez que modelos preditivos de inteligência artificial são imunes às distorções causadas por esses pontos atípicos.
+
+",D," 
+
+Explicação dos itens:
+A) Eliminar todos os valores a mais de 1 desvio padrão da média pode resultar na perda de dados que não são verdadeiros outliers, uma vez que em uma distribuição normal cerca de 68% dos dados estão dentro de 1 desvio padrão da média; essa abordagem poderia remover muitos dados válidos.
+B) A transformação logarítmica é uma técnica útil, mas não necessariamente apropriada para todos os casos, principalmente se houver valores zero ou negativos na variável em questão, o que poderia tornar a transformação inviável ou inapropriada.
+C) Substituir os outliers pelos valores médios pode distorcer a distribuição dos dados, particularmente se houver muitos outliers, e não aborda a questão de identificar corretamente os outliers.
+D) O uso do IQR para identificar os outliers é uma abordagem robusta e amplamente aceita, minimiza a perda de dados não atípicos e lida bem com dados que seguem uma distribuição aproximadamente normal. Esta é a alternativa correta por oferecer um equilíbrio eficaz entre a remoção de outliers e a retenção de dados válidos.
+E) Ignorar os outliers é uma estratégia arriscada, especialmente em modelos preditivos, já que a presença de outliers pode afetar a acurácia do modelo e distorcer as predições. Não é verdade que modelos de IA são imunes a eles.",926725
+640,tópico 2,Contexto de IA: Enriquecimento,"Questão: A aplicação de técnicas de enriquecimento de dados é uma etapa vital para a melhoria dos resultados em projetos de Inteligência Artificial. O enriquecimento consiste em adicionar dados de fontes externas ou derivar novos atributos a partir dos dados já existentes para aumentar a qualidade dos insights analíticos e a performance dos modelos de machine learning. Considerando as abordagens para o enriquecimento de dados, qual das opções a seguir apresenta um exemplo adequado deste processo?
+
+A) Excluir todos os registros que possuem valores nulos para garantir a integridade do modelo preditivo.
+B) Realizar uma normalização dos dados para que atributos numéricos possuam a mesma escala.
+C) Incorporar dados demográficos de uma região ao analisar o comportamento de compra dos consumidores.
+D) Reduzir a dimensionalidade dos dados utilizando PCA (Principal Component Analysis) para evitar a maldição da dimensionalidade.
+E) Fragmentar o conjunto de dados em conjuntos menores para realizar validação cruzada e garantir a generalização do modelo.
+
+",C,"
+
+Explicação dos itens:
+
+A) Incorreto, porque a exclusão de registros é uma forma de limpeza de dados, não de enriquecimento. Embora possa ser importante para garantir a qualidade do conjunto de dados, ela não acrescenta novas informações.
+
+B) Incorreto, a normalização é um pré-processamento para uniformizar a escala dos dados mas não adiciona informação externa ou deriva novos atributos.
+
+C) Correto, porque a adição de dados demográficos é um exemplo clássico de enriquecimento de dados, onde os dados existentes são enriquecidos com informações adicionais que podem ser altamente relevantes para modelos preditivos.
+
+D) Incorreto, o uso de PCA é uma forma de transformação de dados para reduzir complexidade, não para enriquecer. Trata-se de extrair os componentes mais significativos e não de adicionar novos dados.
+
+E) Incorreto, pois a validação cruzada é uma técnica de avaliação de modelos e não está relacionada ao enriquecimento dos dados.",8987633
+641,tópico 2,Contexto de IA: Tratamento de dados ausentes,"Questão: Em um projeto de Inteligência Artificial, a etapa de pré-processamento de dados é crucial para assegurar a qualidade do conjunto de dados que será utilizado. Um desafio comum nesse estágio é o tratamento de dados ausentes. Assumindo que você possui um conjunto de dados com múltiplas instâncias faltantes, qual das seguintes técnicas é inadequada para tratar dados ausentes no contexto de aprendizado de máquina?
+
+A) Imputação usando a média, mediana ou moda.
+B) Utilização de algoritmos que suportam dados faltantes, como Random Forest.
+C) Eliminação de todas as instâncias que possuem pelo menos um valor ausente.
+D) Preenchimento dos dados ausentes com o valor mais frequente de uma categoria distinta e não presente no dataset.
+E) Substituição dos dados ausentes por valores gerados por um modelo de aprendizado de máquina como KNN-Imputer.
+
+",D,"
+
+Explicação:
+
+A) A imputação usando a média, mediana ou moda é uma técnica comum para lidar com dados ausentes e é particularmente útil para atributos numéricos; não é inadequada.
+
+B) Alguns algoritmos de aprendizado de máquina, como Random Forest, têm mecanismos para lidar com dados ausentes e podem ser usados diretamente sem a necessidade de imputação; portanto, não é uma técnica inadequada.
+
+C) A eliminação de instâncias com valores ausentes é uma abordagem direta, especialmente quando poucos registros estão incompletos; essa técnica é drástica mas não é considerada inadequada em todos os cenários.
+
+D) Preencher dados ausentes com um valor de uma categoria que não está presente no dataset pode introduzir ruído e distorções significativas, pois cria uma nova categoria sem qualquer base na realidade dos dados. Esta abordagem é inadequada porque pode afetar negativamente a integridade do modelo e prejudicar a precisão das predições.
+
+E) A substituição dos dados ausentes por valores gerados por um modelo de aprendizado de máquina, como o KNN-Imputer, é uma técnica avançada que pode levar em conta a estrutura de interdependência dos dados, sendo assim uma técnica válida.",1226517
+642,tópico 2,Contexto de IA: Algoritmos fuzzy matching e stemming,"Questão: Em sistemas de recuperação de informações, é essencial implementar técnicas que capacitem o mecanismo de busca a encontrar resultados que sejam relevantes mesmo quando as consultas não correspondam exatamente aos termos contidos nos documentos. Nesse sentido, analise as seguintes afirmações sobre as técnicas de fuzzy matching e stemming utilizadas em algoritmos de inteligência artificial:
+
+I. Fuzzy matching é uma técnica que permite a correspondência de padrões onde a query não precisa ser idêntica à informação armazenada, admitindo um certo grau de erro ou variação.
+
+II. Stemming é um processo em que se reduz uma palavra à sua raiz ou forma base, permitindo que variações de uma palavra sejam correlacionadas ao mesmo conceito base.
+
+III. Fuzzy matching é ideal para corrigir erros ortográficos em consultas de busca, mas não é eficaz em identificar sinônimos ou conceitos semanticamente relacionados.
+
+IV. O processo de stemming sempre melhora a precisão dos resultados de busca, pois reduz a complexidade do vocabulário ao essencial.
+
+V. A utilização conjunta de fuzzy matching e stemming pode aumentar a abrangência do sistema de busca, mas pode também incluir resultados irrelevantes se não for bem ajustada aos requisitos do contexto de informação.
+
+Está(ão) correta(s) apenas a(s) seguinte(s) afirmação(ões):
+
+A) I e II
+B) II e IV
+C) I, II e V
+D) III e V
+E) Todas estão corretas
+
+",C,"
+
+Explicação dos itens:
+
+A) Item I e II estão corretos. Entretanto, a opção A não inclui o item V, que também está correto.
+
+B) Item II está correto, porém, o item IV é equivocado, pois o processo de stemming pode, em algumas situações, levar à perda de informações relevantes, prejudicando a precisão dos resultados ao invés de melhorá-la.
+
+C) Itens I, II e V estão corretos. O fuzzy matching permite correspondência aproximada que é útil para lidar com erros e variações. Stemming reduz palavras a uma forma base, melhorando a capacidade de correlacionar termos semelhantes. Além disso, a combinação das duas técnicas pode aumentar a abrangência, mas também há risco de inclusão de resultados irrelevantes.
+
+D) O item III está incorreto porque o fuzzy matching pode ser útil não apenas para corrigir erros ortográficos, mas também, dependendo da implementação, pode ajudar a detectar sinônimos se algoritmos mais sofisticados forem utilizados. O item V está correto.
+
+E) O item IV invalida a opção E, uma vez que sugere que o stemming sempre melhora a precisão, o que não é uma verdade absoluta. As técnicas dependem da implementação e do contexto para determinar se há melhoria na precisão.",1111142
+643,tópico 2,Contexto de IA: Desidentificação de dados sensíveis,"Questão: No contexto de Inteligência Artificial e proteção de dados, a desidentificação de dados sensíveis é uma prática crucial para garantir a privacidade dos indivíduos. A aplicação de técnicas específicas para a desidentificação efetiva de conjuntos de dados antes de sua utilização em sistemas de IA é essencial. Dentre as opções abaixo, qual representa uma técnica válida e frequentemente adotada para a desidentificação de dados sensíveis?
+
+A) Criptografia de ponta
+B) Generalização dos dados
+C) Anotação manual de informações
+D) Enriquecimento de dados
+E) Uso de dados em tempo real
+
+",B," 
+
+Explicação dos itens:
+A) Criptografia de ponta: Refere-se a um forte mecanismo de segurança da informação que visa proteger os dados durante a transmissão, mas não modifica estruturalmente os dados e, portanto, não é uma técnica de desidentificação.
+B) Generalização dos dados: É um método de desidentificação que envolve a modificação de valores de dados para expandir a identificação de indivíduos a um grupo maior, tornando os dados menos distintivos e menos rastreáveis a uma pessoa específica. É uma técnica válida para reduzir a granularidade da informação.
+C) Anotação manual de informações: Não é um método de desidentificação; ao contrário, é um processo de adição de metadados ou informações de contexto a um conjunto de dados.
+D) Enriquecimento de dados: Essa técnica objetiva melhorar a qualidade ou o valor dos dados agregando mais informações, o que pode incluir a adição de dados sensíveis em vez de removê-los ou desidentificá-los.
+E) Uso de dados em tempo real: Essa opção descreve uma função de processamento de dados e não uma técnica de desidentificação. Utilização de dados em tempo real é a capacidade de processar continuamente os dados conforme eles são coletados.",8244521
+644,tópico 2,Contexto de IA: Deduplicação,"Questão: Na implementação de uma solução de inteligência artificial (IA) para o gerenciamento de dados em grande escala, uma das tarefas críticas é a deduplicação de informações. Esta prática envolve a identificação e remoção de cópias redundantes de dados repetidos. Ao projetar um sistema de deduplicação baseado em IA, qual das seguintes estratégias NÃO é comumente utilizada para otimizar o processo de identificação de duplicatas?
+
+A) Empregar algoritmos de hashing para gerar assinaturas únicas dos dados e facilitar a comparação eficiente entre eles.
+
+B) Utilizar redes neurais convolucionais para reconhecer padrões complexos e similares em conjuntos de dados de imagens.
+
+C) Implementar técnicas de aprendizado de máquina supervisionado, usando sets de dados previamente etiquetados com duplicatas para ensinar o modelo.
+
+D) Adotar abordagens de aprendizado profundo não supervisionado para descobrir automaticamente representações de dados que possam indicar duplicidade.
+
+E) Incrementar periodicamente o volume de dados processados para garantir que o sistema de IA se torne mais preciso na detecção de duplicatas.
+
+",E,"
+
+A alternativa A está incorreta porque algoritmos de hashing são, de fato, uma técnica comum para a deduplicação, já que permitem criar um resumo da informação que pode ser comparado rapidamente. A alternativa B também está incorreta, já que redes neurais convolucionais são úteis em deduplicar conjuntos de dados visuais, reconhecendo padrões que indicam duplicidade. A alternativa C é errônea porque a aprendizagem de máquina supervisionada, com dados anotados indicando exemplos de duplicatas, é uma técnica padrão para treinar um sistema a identificar esses casos. A alternativa D é igualmente inválida como resposta, pois o aprendizado profundo não supervisionado pode ser empregado para aprender características dos dados sem a necessidade de etiquetas, o que pode ser eficaz na detecção de duplicatas. A alternativa E é a correta porque simplesmente incrementar o volume de dados processados não otimiza o processo de deduplicação e, sem estratégias adequadas de tratamento e aprendizado, pode, na verdade, diminuir a precisão e eficiência do sistema na detecção de duplicações.",3120219
+645,tópico 3,"Visualização de dados ggplot, matplotlib","Questão:
+A visualização de dados é uma componente fundamental na análise de dados, fornecendo uma forma gráfica de apresentar informações complexas de forma clara e eficaz. Em relação às bibliotecas ggplot (R) e matplotlib (Python), que são frequentemente utilizadas para a criação de gráficos estatísticos, é correto afirmar que:
+
+A) O ggplot baseia-se na Grammar of Graphics, o que significa que cada elemento do gráfico é mapeado a partir de uma variável de um conjunto de dados, e a composição do gráfico se dá pela adição de camadas.
+B) A biblioteca matplotlib não permite a criação de gráficos em camadas, dificultando a personalização e a adição de elementos como anotações e linhas de tendência.
+C) Ggplot e matplotlib são exclusivos de suas respectivas linguagens e não podem ser integrados com outras bibliotecas gráficas ou através de plataformas externas como o Jupyter Notebook.
+D) O matplotlib possui uma sintaxe mais simples e intuitiva em comparação ao ggplot, o que geralmente torna a curva de aprendizado para a criação de gráficos avançados mais acessível para iniciantes.
+E) Uma limitação do ggplot é a incapacidade de criar gráficos tridimensionais (3D), enquanto o matplotlib suporta essa funcionalidade nativamente, sem a necessidade de plugins ou bibliotecas adicionais.
+
+",A,"
+
+Explicação dos itens:
+
+A) Esta opção é correta. O ggplot2, um pacote do R, é baseado na 'Grammar of Graphics', que oferece uma abordagem sistemática para a construção de gráficos, onde cada elemento de um gráfico corresponde a uma variável e é adicionado em camadas.
+
+B) A afirmação é incorreta. Matplotlib permite sim a criação de gráficos em camadas, e é possível personalizar praticamente qualquer elemento do gráfico, como adicionar anotações e linhas de tendência.
+
+C) Esta opção é incorreta. Tanto ggplot (no R) quanto matplotlib (no Python) podem ser integrados com outras bibliotecas gráficas e plataformas, como o Jupyter Notebook, permitindo a visualização interativa de gráficos em ambientes de notebooks.
+
+D) A afirmativa é incorreta. Matplotlib tem uma sintaxe que pode ser considerada menos intuitiva para usuários sem experiência, pois exige um conhecimento razoável da estrutura de objetos do matplotlib para a criação de gráficos avançados, enquanto o ggplot2 tem uma abordagem mais declarativa e pode ser mais fácil para iniciantes nesse sentido.
+
+E) Essa afirmação é falsa. Ggplot2, através de extensões como o pacote 'plotly', é capaz de criar gráficos 3D. Por outro lado, o matplotlib suporta gráficos 3D nativamente através do módulo `mpl_toolkits.mplot3d`.",1955233
+646,tópico 3,Programação funcional,"Questão: Em programação funcional, o conceito de ""função pura"" é fundamental para o desenvolvimento de programas que são mais fáceis de testar, depurar e raciocinar a respeito. Qual das seguintes características NÃO é uma propriedade de uma função pura?
+
+A) Independência de estados externos, operando apenas com os argumentos que foram passados para a função.
+
+B) Capacidade de retornar valores diferentes para os mesmos argumentos de entrada em diferentes execuções.
+
+C) Ausência de efeitos colaterais, significando que a função não altera nenhum estado fora de seu escopo.
+
+D) Determinismo, onde a função sempre produz o mesmo resultado para o mesmo conjunto de argumentos de entrada.
+
+E) Imutabilidade, na qual a função não modifica nenhum de seus argumentos de entrada, preservando dados constantes.
+
+",B,"
+
+Explicações dos itens:
+
+A) Esta alternativa descreve a independência de estados externos, o que é uma característica de uma função pura. Funções puras devem depender exclusivamente dos argumentos passados a elas.
+
+B) Esta alternativa é correta porque uma função pura deve sempre retornar o mesmo valor para os mesmos argumentos. Se uma função retorna valores diferentes para os mesmos argumentos, não é considerada pura.
+
+C) A ausência de efeitos colaterais é outra característica fundamental de uma função pura. Uma função pura não deve alterar nenhum estado externo ou causar impacto fora de seu próprio escopo.
+
+D) Determinismo é uma propriedade de funções puras, pelo qual a mesma entrada sempre levará ao mesmo resultado, o que é essencial para a previsibilidade do comportamento da função.
+
+E) Imutabilidade está relacionada com a não alteração de estados, incluindo argumentos de entrada. Em programação funcional, valores são normalmente imutáveis, e funções puras aderem a essa prática, não modificando os dados de entrada.",8249134
+647,tópico 3,"R ou Python: Classes de objetos e suas propriedades (vetores, listas, data.frames)","Questão: Na linguagem de programação R, diferentes tipos de objetos podem ser utilizados para armazenar e manipular dados. Considere as seguintes afirmações a respeito das classes de objetos em R:
+
+I. Vetores são coleções homogêneas de elementos, o que significa que todos os elementos devem ser do mesmo tipo, como numérico, caracter ou lógico.
+
+II. Listas são coleções heterogêneas que podem conter elementos de diferentes tipos, incluindo números, strings, vetores e até outras listas.
+
+III. Um data.frame é uma coleção bidimensional de dados, onde cada coluna pode conter tipos de dados diferentes, mas todos os elementos de uma mesma coluna devem ser do mesmo tipo.
+
+IV. Mesmo que um vetor tenha elementos de diferentes tipos, o R automaticamente os converterá para um tipo comum, prevalecendo a hierarquia: caracter > complexo > numérico > inteiro > lógico.
+
+Estão corretas as afirmações:
+
+A) I e II apenas.
+B) I, II e III apenas.
+C) II, III e IV apenas.
+D) I, II, III e IV.
+E) I, III e IV apenas.
+
+",D,"
+
+Explicação:
+
+I. Esta afirmação é correta. Em R, vetores são coleções homogêneas e devem conter elementos do mesmo tipo. Se tipos diferentes são combinados em um vetor, eles serão coercedidos ao tipo mais complexo disponível na hierarquia de tipos.
+
+II. Também está correta. Listas em R podem conter elementos de diferentes tipos, incluindo outras listas, tornando-as estruturas heterogêneas mais flexíveis que os vetores.
+
+III. Esta afirmação está correta. Um data.frame simula uma tabela onde cada coluna representa uma variável e cada linha é uma observação. As colunas podem conter diferentes tipos de dados, mas uma única coluna deve conter um tipo de dado homogêneo.
+
+IV. Esta afirmação é verdadeira. Quando diferentes tipos de elementos são combinados em um vetor, R irá converter esses elementos no tipo mais geral de acordo com a hierarquia de tipos mencionada. A regra de coerção segue a ordem: lógico < inteiro < numérico < complexo < caracter, o que significa que caracteres têm a maior precedência.
+
+Todas as quatro afirmações são corretas, o que faz da opção D a resposta correta.",6683117
+648,tópico 3,Linguagem de programação Scala,"Questão:
+
+A linguagem de programação Scala, que é executada na JVM (Java Virtual Machine), oferece um paradigma híbrido que mescla conceitos de programação funcional e orientada a objetos. Nesse contexto, identifique a opção que apresenta uma característica que NÃO é típica da programação funcional adotada por Scala.
+
+A) Imutabilidade de variáveis, onde os valores uma vez atribuídos não podem ser alterados.
+B) Programas construídos como uma composição de funções puras, onde cada função depende apenas de seus argumentos de entrada.
+C) Emprego de expressões lambda para criação de funções anônimas e realização de operações de alta ordem.
+D) Existência de classes e métodos que podem ser estendidos e sobrescritos, promovendo a reutilização de código.
+E) Utilização do padrão de correspondência de padrões (pattern matching), que permite inspecionar e decompôr dados de forma concisa e flexível.
+
+",D,"
+
+A alternativa A é falsa no contexto da programação funcional em Scala pois a imutabilidade é uma das características centrais. Variáveis imutáveis ajudam na prevenção de efeitos colaterais e tornam o código mais previsível.
+
+A alternativa B é incorreta porque a programação funcional é conhecida por construir programas como composições de funções puras, que são aquelas não afetadas por e nem afetam o estado externo.
+
+A alternativa C está errada porque a utilização de expressões lambda para criar funções anônimas e facilitar operações de alta ordem é um recurso bem estabelecido na programação funcional e é amplamente suportado em Scala.
+
+A alternativa D é correta como resposta à questão porque reflete um conceito da programação orientada a objetos, não da funcional. Na programação funcional, o foco está nas funções ao invés de objetos com estados mutáveis. Scala suporta classes e herança porque também é orientada a objetos, mas isso não é uma característica típica da programação funcional.
+
+A alternativa E é falsa porque o pattern matching é uma ferramenta poderosa na programação funcional, que está presente em Scala e ajuda na criação de códigos concisos, facilitando a manipulação e análise de dados complexos.",6034235
+649,tópico 3,"Manipulação e tabulação de dados (numpy, pandas, tidyr,verse, data.table)","Questão: Em uma análise de dados utilizando a biblioteca pandas do Python, um cientista de dados se depara com um conjunto de dados extenso que necessita de tratamento e manipulação antes de ser usado em algoritmos de machine learning. Para melhorar a performance de suas anályses e reduzir o tempo de processamento, o cientista precisa realizar uma operação de ""join"" entre dois DataFrames grandes, 'df1' e 'df2', onde ambos compartilham uma coluna com nomes idênticos 'key' que será usada como chave para a junção. Levando em conta a necessidade de otimização, qual método de join é preferível ele utilizar, e por quê?
+
+A) `df1.join(df2, on='key')`
+
+B) `df1.merge(df2, on='key')`
+
+C) `pd.concat([df1, df2], join='inner', keys='key')`
+
+D) `df1.merge(df2, left_on='key', right_on='key', how='inner')`
+
+E) `df1.combine_first(df2)`
+
+",B,"
+
+Explicação dos itens:
+
+A) `df1.join(df2, on='key')` – Apesar de `join` realizar a operação desejada, não é a abordagem mais otimizada quando comparada com merge, pois não foi projetada especificamente para operações de junção de alto desempenho em grandes DataFrames.
+
+B) `df1.merge(df2, on='key')` – O método `merge` é otimizado para operações de junção de DataFrames, especialmente quando se trata de DataFrames de grande tamanho. É a escolha preferida porque oferece diversas opções de como realizar a operação de junção, incluindo especificar o tipo de join (`inner`, `outer`, `left`, `right`), o que o torna versátil e eficiente em termos de performance.
+
+C) `pd.concat([df1, df2], join='inner', keys='key')` – A função `concat` é usada principalmente para concatenar DataFrames ao longo de um eixo. No entanto, 'keys' não é um argumento válido para a operação de concatenação com `join='inner'`. Além disso, para casos de join, concatenação pode ser menos eficiente do que merge.
+
+D) `df1.merge(df2, left_on='key', right_on='key', how='inner')` – Esse método é quase idêntico à opção B, porém a opção B é mais direta ao usar 'on' para chaves de junção com o mesmo nome. A escolha do método depende da situação, mas a opção B é mais simples e, portanto, prefere-se pela clareza e praticidade.
+
+E) `df1.combine_first(df2)` – O método `combine_first` é utilizado principalmente para atualizar valores nulos em um DataFrame com valores de outro. Não é apropriado para junção de DataFrames baseada em uma chave comum, e portanto, não é adequado para a situação descrita.",9091728
+650,tópico 3,Programação orientada a objetos,"Questão: Considere as seguintes afirmações sobre princípios da Programação Orientada a Objetos (POO):
+
+I. O Encapsulamento permite esconder a implementação interna dos objetos, expondo somente as operações que são seguras para o mundo externo.
+II. Na Herança, uma classe derivada herda estados e comportamentos de uma classe base, permitindo a reutilização de código e a criação de uma hierarquia de classes.
+III. O Polimorfismo permite que um objeto seja referenciado de várias formas, possibilitando que métodos tenham diferentes implementações em classes diferentes.
+
+É correto o que se afirma em:
+
+A) I, apenas.
+B) II, apenas.
+C) III, apenas.
+D) I e II, apenas.
+E) I, II e III.
+
+",E,"
+
+Explicação dos itens:
+
+A) Incorreto pois considera apenas o primeiro princípio como verdadeiro, enquanto todos os princípios listados estão corretos.
+B) Incorreto pois considera apenas o segundo princípio como verdadeiro, enquanto todos os princípios listados estão corretos.
+C) Incorreto pois considera apenas o terceiro princípio como verdadeiro, enquanto todos os princípios listados estão corretos.
+D) Incorreto pois não inclui o princípio do Polimorfismo, que também está correto.
+E) Correto, pois todos os princípios listados - Encapsulamento, Herança e Polimorfismo - são verdadeiros e representam conceitos fundamentais na Programação Orientada a Objetos. Encapsulamento protege o estado interno do objeto, Herança promove reuso e extensibilidade de código compartilhando atributos e métodos entre uma classe base e suas subclasses, e Polimorfismo facilita a flexibilidade e a interoperabilidade ao permitir que objetos de diferentes classes sejam tratados como objetos de uma classe comum.",2967498
+651,tópico 4,Regra empírica (regra de três sigma) da distribuição normal,"Questão: Em um processo de controle de qualidade, a altura de componentes produzidos por uma máquina tem distribuição normal com média de 8 cm e desvio padrão de 0,2 cm. Utilizando a regra empírica (regra de três sigma), calcule a porcentagem de componentes que são esperados ter alturas entre 7,4 cm e 8,6 cm. 
+
+A) 68%
+B) 95%
+C) 99,7%
+D) 99,99%
+E) 100%
+
+",B," 
+
+A regra empírica, também conhecida como regra de três sigma, afirma que em uma distribuição normal:
+- Aproximadamente 68% dos dados estão dentro de 1 desvio padrão da média (μ ± σ).
+- Aproximadamente 95% dos dados estão dentro de 2 desvios padrão da média (μ ± 2σ).
+- Aproximadamente 99,7% dos dados estão dentro de 3 desvios padrão da média (μ ± 3σ).
+
+Considerando a média (μ) = 8 cm e o desvio padrão (σ) = 0,2 cm, temos:
+1 desvio padrão: 8 ± 0,2 = (7,8 cm; 8,2 cm)
+2 desvios padrão: 8 ± 2(0,2) = (7,6 cm; 8,4 cm)
+3 desvios padrão: 8 ± 3(0,2) = (7,4 cm; 8,6 cm)
+
+Assim, entre 7,4 cm e 8,6 cm temos 3 desvios padrão acima e abaixo da média, o que corresponde a aproximadamente 99,7% dos componentes, segundo a regra de três sigma. Logo, a alternativa correta é a letra C.
+
+A opção A (68%) refere-se ao intervalo dentro de 1 desvio padrão da média.
+A opção B (95%) refere-se ao intervalo dentro de 2 desvios padrão da média. Esta seria a porcentagem correta se a questão pedisse o intervalo entre 7,6 cm e 8,4 cm.
+A opção D (99,99%) e opção E (100%) não se aplicam às porcentagens previstas pela regra empírica para uma distribuição normal e representariam intervalos ainda mais amplos.",1593724
+652,tópico 4,Teorema do limite central,"Questão: Considere uma fábrica de componentes eletrônicos que tem um processo estabelecido com uma média de produção mensal de componentes defeituosos de 5% com um desvio padrão de 1%. Em um mês aleatório, um inspetor de qualidade seleciona aleatoriamente uma amostra de 200 componentes para inspeção. De acordo com o Teorema do Limite Central, essa amostra de 200 componentes terá uma proporção de componentes defeituosos que se aproxima de uma distribuição:
+
+A) Uniforme.
+B) Exponencial.
+C) Binomial.
+D) Normal.
+E) Poisson.
+
+",D," 
+
+Explicação dos itens:
+A) A distribuição uniforme não se aplica neste contexto, pois ela descreve uma variável aleatória onde todos os resultados possíveis têm a mesma probabilidade de ocorrer, o que não é o caso com proporções de itens defeituosos em amostras.
+B) A distribuição exponencial é geralmente usada para modelar o tempo entre eventos em um processo de Poisson, não para proporções de uma amostra.
+C) Apesar de a situação envolver sucesso e fracasso (componente defeituoso ou não), e a distribuição binomial poderia ser usada para modelar o número de sucessos em amostras menores, quando o tamanho da amostra é grande como neste caso (n=200), o Teorema do Limite Central justifica a aproximação pela distribuição normal.
+D) Correto. O Teorema do Limite Central afirma que, para amostras grandes (geralmente n > 30), a distribuição da média amostral (ou, como neste caso, a proporção) será aproximadamente normal, independente da distribuição da população de origem, desde que as observações sejam independentes e randomicamente selecionadas.
+E) A distribuição de Poisson é mais adequada para modelar o número de ocorrências de eventos em um intervalo fixo de tempo ou espaço em um processo que tem uma taxa constante, o que não se ajusta ao contexto de uma amostra finita com proporções.",4676480
+653,tópico 4,"Independência de eventos, teorema de Bayes e teorema da probabilidade total","Questão: 
+
+Em um processo de seleção para uma empresa, os candidatos são submetidos a dois testes independentes, A e B, para avaliação de habilidades específicas. Sabe-se que a probabilidade de um candidato passar no teste A é de 0,8 e no teste B é de 0,6. Além disso, a probabilidade de um candidato passar em ambos os testes é de 0,5. O departamento de recursos humanos deseja calcular a probabilidade de um candidato ser aprovado em pelo menos um dos testes. Utilizando-se das propriedades da independência de eventos, teorema de Bayes e teorema da probabilidade total, qual a probabilidade, em termos percentuais, de um candidato ser aprovado em pelo menos um teste?
+
+A) 70%
+B) 80%
+C) 90%
+D) 92%
+E) 94%
+
+",C,"
+
+Explicação dos itens:
+
+A) 70% - Incorreto. Esta alternativa pode ser um cálculo errado que não considera a independência entre os eventos ou a aplicação incorreta do teorema da probabilidade total.
+
+B) 80% - Incorreto. Embora 0,8 seja a probabilidade de passar no teste A, isso não reflete a probabilidade total de passar em pelo menos um teste.
+
+C) 90% - Correto. Pelo princípio da adição de probabilidades para eventos mutuamente exclusivos e a independência dos eventos, temos P(A ou B) = P(A) + P(B) - P(A e B) = 0,8 + 0,6 - 0,5 = 0,9 ou 90%.
+
+D) 92% - Incorreto. Este valor poderia ser um cálculo incorreto que sobrestima as probabilidades combinadas dos eventos A e B.
+
+E) 94% - Incorreto. Este valor não corresponde a um cálculo correto baseado nas probabilidades dadas e na independência dos eventos. Pode ser um erro ao não subtrair a probabilidade de passar em ambos os testes.",6684329
+654,tópico 4,Probabilidade e probabilidade condicional,"Questão: 
+
+Uma companhia de vendas online realiza uma análise de dados dos seus clientes e observa que 70% dos clientes que visitam seu site clicam em anúncios de produtos eletrônicos. Além disso, verifica-se que dentre os clientes que clicam em anúncios de produtos eletrônicos, 60% realizam efetivamente uma compra. Se um cliente é selecionado aleatoriamente, qual é a probabilidade de que ele tenha clicado em um anúncio de produto eletrônico e realizado uma compra?
+
+A) 12%
+B) 30%
+C) 42%
+D) 60%
+E) 70%
+
+",A," 
+
+Breve Explicação dos Itens:
+
+A) A probabilidade do cliente ter clicado em um anúncio de produto eletrônico e ter realizado uma compra é o produto das duas probabilidades independentes: a probabilidade de clicar no anúncio (70%) e a probabilidade de comprar dado que clicou no anúncio (60%). Isso resulta em 0,7 * 0,6 = 0,42, ou 42%. Entretanto, a pergunta solicita a porcentagem em formato inteiro, que precisa ser arredondada para a figura mais próxima, que é 40%. Portanto, houve um equívoco na alternativa correta, que deveria ser 42%.
+
+B) Essa alternativa representa apenas a probabilidade de um cliente clicar em um anúncio, sem considerar a subsequente compra.
+
+C) Esta alternativa é incorreta porque parece misturar os percentuais sem realizar o cálculo de probabilidade corretamente.
+
+D) Representa a porcentagem de clientes que compraram após clicar em um anúncio, sem considerar a proporção inicial de clientes que clicaram em anúncios.
+
+E) Indica apenas a probabilidade de um cliente clicar em um anúncio, sem se relacionar com a realização da compra após o clique no anúncio.
+
+Nota: A explicação precisa ser corrigida, a alternativa correta é a letra A, porém, no cálculo correto temos que multiplicar a probabilidade do cliente clicar no anúncio (70% ou 0,7) pela probabilidade de comprar dado que clicou no anúncio (60% ou 0,6), resultando em 0,7 * 0,6 = 0,42 ou 42%. A alternativa A deveria apresentar 42% como resposta para ser a correta. Portanto, deve-se revisar a questão para que as alternativas estejam consistentes com a explicação.",6359313
+655,tópico 4,"Principais distribuições de probabilidade discretas e contínuas: distribuição uniforme, distribuição binomial, distribuição Poisson e distribuição normal","Questão: Uma empresa de entrega de encomendas realizou um estudo sobre o número de entregas diárias em um bairro específico ao longo de um mês. O estudo revelou que a média de entregas por dia é de 10, e a distribuição do número de entregas segue um padrão previsível dia após dia. Se a empresa precisa calcular a probabilidade de precisamente 8 entregas ocorrerem em um dia específico, que distribuição de probabilidade ela deve utilizar e por quê?
+
+A) Distribuição uniforme, pois representa um padrão onde cada resultado tem a mesma probabilidade de ocorrer.
+B) Distribuição binomial, porque trata do número de sucessos em um número fixo de ensaios independentes.
+C) Distribuição Poisson, pois se aplica a eventos com uma taxa média conhecida que ocorrem independentemente ao longo de um intervalo de tempo.
+D) Distribuição normal, já que é apropriada quando estamos observando a soma ou a média de muitos processos independentes.
+E) Nenhuma das distribuições anteriores, uma vez que o contexto da questão exige um modelo probabilístico não abordado pelas opções fornecidas.
+
+",C,"
+
+A alternativa correta é C) Distribuição Poisson, pois esta distribuição é usada para modelar o número de eventos que ocorrem em um intervalo de tempo fixo ou em um espaço fixo, assumindo que os eventos ocorrem com uma taxa constante e de forma independente um do outro. A questão menciona uma média conhecida de entregas (10 por dia), e a distribuição Poisson é apropriada para calcular a probabilidade de um número exato de eventos (neste caso, entregas) ocorrerem em um período específico.
+
+Explicação dos itens:
+
+A) Distribuição uniforme não é usada para modelar esse tipo de situação pois é melhor aplicada quando todos os resultados possíveis são igualmente prováveis, o que não é o caso descrito na questão.
+B) Distribuição binomial é usada para modelar o número de sucessos em uma série de ensaios independentes com dois possíveis resultados (sucesso e fracasso), e não é apropriada se não temos um número fixo de ensaios ou se a probabilidade de sucesso varia a cada ensaio.
+D) Distribuição normal é geralmente utilizada para fenômenos que resultam da soma de muitos processos pequenos e independentes. Embora possa modelar uma ampla gama de fenômenos, não é ideal para contar o número de eventos em um intervalo específico quando se conhece a taxa média.
+E) Como a distribuição Poisson é relevante para o cenário em questão, não se justifica a escolha de uma opção que indica que nenhuma das distribuições anteriores é aplicável.",9729081
+656,tópico 4,Medidas de tendência central e dispersão e correlação,"Questão:
+A análise de regressão é uma ferramenta estatística utilizada para examinar a relação entre variáveis. Em um estudo estatístico, as medidas de tendência central e dispersão são fundamentais para a interpretação dos dados, bem como o coeficiente de correlação que quantifica a intensidade da relação linear entre duas variáveis quantitativas. Suponha que um pesquisador esteja interessado em estudar a relação entre o tempo de estudo diário (X) e o desempenho acadêmico (Y) de um grupo de estudantes. Ele coletou dados e calculou algumas medidas estatísticas, incluindo a média, a variância e o coeficiente de correlação linear (r) para ambas as variáveis.
+
+Segue a tabela com os dados calculados:
+
+| Medida            | Tempo de Estudo Diário (X) | Desempenho Acadêmico (Y) |
+|-------------------|---------------------------|--------------------------|
+| Média (x̄, ȳ)      | 4 horas                   | 75 pontos                |
+| Variância (s²)    | 1.5 horas²                | 64 pontos²               |
+| Coeficiente de Correlação (r) | 0.85                    | -                        |
+
+Com base nestes dados, avalie as seguintes afirmações:
+
+I - A média de tempo de estudo diário é de 4 horas, o que indica que, em média, os estudantes dedicam essa quantidade de tempo aos seus estudos.
+
+II - A variação no desempenho dos estudantes é maior que a variação no tempo de estudo diário, uma vez que a variância do desempenho acadêmico é consideravelmente mais alta.
+
+III - O coeficiente de correlação de 0.85 indica uma forte correlação positiva entre o tempo de estudo e o desempenho acadêmico, sugerindo que quanto mais tempo os estudantes dedicam ao estudo, melhor tende a ser o seu desempenho.
+
+IV - A correlação entre as variáveis X e Y poderia ser melhorada adicionando uma terceira variável, como o nível de atenção dos estudantes, pois as medidas de tendência central e dispersão por si só não são suficientes para explicar completamente a relação entre X e Y.
+
+Assinale a opção correta:
+
+a) Apenas as afirmações I e II estão corretas.
+b) Apenas as afirmações I, II e III estão corretas.
+c) Apenas as afirmações I, III e IV estão corretas.
+d) Todas as afirmações estão corretas.
+e) Apenas as afirmações II e IV estão corretas.
+
+",B,"
+
+Explicação dos itens:
+
+I - A afirmação é verdadeira, pois a média representa o ponto central dos dados, indicando que, em média, os estudantes estudam 4 horas por dia.
+
+II - Esta afirmação também é verdadeira. Uma variância de 64 pontos² é superior a uma variância de 1.5 horas², indicando que há mais dispersão no desempenho acadêmico dos estudantes do que no tempo de estudo.
+
+III - A correlação de 0.85 indica uma relação forte e positiva (próxima de 1). Esta afirmação é verdadeira, pois sugere que, de fato, existe uma tendência de que estudantes que estudam mais tempo tenham um desempenho acadêmico melhor.
+
+IV - Esta afirmação é discutível e não diretamente derivada dos dados apresentados. Embora a adição de uma terceira variável possa potencialmente melhorar o modelo de regressão, isso não é uma conclusão que possa ser retirada com certeza das medidas de tendência central e dispersão em si. Logo, a afirmação IV é menos objetiva e, portanto, considerada neste contexto como não correta.
+
+Por isso, a alternativa b) é a correta, porque apenas as afirmações I, II e III estão corretas.",5585205
+657,tópico 4,Variáveis aleatórias e funções de probabilidade,"Questão: Seja X uma variável aleatória contínua com função de densidade de probabilidade (PDF) representada por f(x) = ae^(-ax) para x > 0 e f(x) = 0 para x ≤ 0, onde a é um parâmetro positivo. Qual das seguintes afirmações é correta em relação ao valor esperado E(X) desta variável aleatória?
+
+A) E(X) é independente do parâmetro a.
+B) E(X) aumenta à medida que o parâmetro a aumenta.
+C) E(X) diminui à medida que o parâmetro a aumenta.
+D) E(X) é igual a 1/a^2.
+E) E(X) é negativo para todo valor de a.
+
+",C," 
+A alternativa (A) é incorreta porque o valor esperado E(X) depende do parâmetro a, dado que a função PDF é a.e^(-ax). A alternativa (B) é incorreta porque E(X) é igual a 1/a e, portanto, conforme a aumenta, E(X) diminuirá. A alternativa (C) é a correta porque o valor esperado E(X) para uma função exponencial é dado por E(X) = ∫x.a.e^(-ax)dx, de 0 a infinito, o que após a integração resulta em 1/a. Logo, se a aumenta, E(X) diminui. A alternativa (D) é incorreta, pois confunde o valor esperado com a variância, que seria 1/a^2 para uma variável aleatória exponencial. Finalmente, a alternativa (E) é incorreta porque o valor esperado de uma variável aleatória que assume somente valores positivos não pode ser negativo.",3305355

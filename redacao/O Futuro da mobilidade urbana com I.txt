@@ -1,0 +1,29 @@
+O Futuro da mobilidade urbana com IA
+
+O desenho animado Jetsons, por vezes, retrata 
+o personagem principal em seu carro voador e
+autônomo realizando atividades corriqueiras. 
+Com o avanço da Inteligência Artificial (IA),
+essa realidade fictícia está cada vez mais real,
+pois essa tecnologia já está presente nos carros
+mais modernos, como os carros da empresa Tesla, 
+que pregam por segurança no trânsito e que permitem
+aperfeiçoar a logística do tráfego dos veículos.
+
+Segundo o especialista em IA, Yoshua Bengio, os 
+algoritmos de Inteligência Artificial são capazes
+de reconhecer padrões baseado em dados ou situações
+passadas anteriormente para eles. Com isso, máquinas 
+inteligentes estão conseguindo capturar a presença de 
+objetos que possam ser nocivos em determinada situação,
+como é o caso de animais presentes em rodovias.
+
+Portanto, com a implementação da IA em mais veículos,
+a taxa de acidentes no trânsito poderá diminuir, 
+tornando assim uma opção mais segura de transporte. 
+E implementando esse método em transportes públicos, como 
+ônibus ou trens, o fator segurança pode ser determinístico
+na hora do cidadão escolher entre ir para casa com o carro 
+ou ir mais seguro em outro transporte.
+
+Tendo em vista essa sita

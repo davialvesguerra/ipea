@@ -1,0 +1,79 @@
+topico,tema,enunciado,resposta_certa,explicacao,resposta_user
+tópico 5,"Técnicas de agrupamento: Agrupamento por partição, por densidade e hierárquico","Questão:
+A análise de clusters ou agrupamento é uma técnica de aprendizagem de máquina não supervisionada utilizada para identificar grupos (clusters) de pontos de dados similares em um dataset. Existem várias abordagens de agrupamento, sendo as mais comuns o agrupamento por partição, por densidade e hierárquico. Com base nas características destas técnicas, analise as afirmações a seguir e assinale a opção correta:
+
+I. O método de agrupamento por partição, como o K-means, aloca cada ponto de dado em exatamente um cluster, minimizando a variação intracluster e maximizando a variação intercluster.
+
+II. O método de agrupamento por densidade, como o DBSCAN (Density-Based Spatial Clustering of Applications with Noise), identifica áreas de alta densidade que são separadas por áreas de baixa densidade e é especialmente útil para identificar outliers ou ruídos.
+
+III. O método de agrupamento hierárquico pode ser executado de forma aglomerativa, onde cada ponto de dado começa como seu próprio cluster e pares de clusters são fundidos à medida que sobem na hierarquia, ou de forma divisiva, onde todos os pontos começam em um único cluster que é progressivamente dividido.
+
+Estão corretas as afirmações:
+
+A) I e II, apenas.
+B) II e III, apenas.
+C) I e III, apenas.
+D) I, II e III.
+E) Nenhuma das afirmações é correta.
+
+",D,"
+
+Breve explicação dos itens:
+
+I. Correta. O método de agrupamento por partição, como o K-means, é um dos métodos mais conhecidos e utilizados. Ele se baseia no princípio de minimizar a soma das distâncias quadradas dos pontos de dados para o centroide do seu respectivo cluster.
+
+II. Correta. O DBSCAN é um método de agrupamento por densidade que não requer a especificação do número de clusters a priori. Ele pode identificar clusters de formas arbitrárias e é robusto para outliers, classificando-os como pontos de ruído.
+
+III. Correta. O agrupamento hierárquico pode ser tanto aglomerativo quanto divisivo, o que lhe dá flexibilidade e permite a criação de um dendrograma que mostra as relações de agrupamento em diferentes níveis de granularidade. Este método não depende da inicialização e pode revelar hierarquias e estruturas de clusters em diferentes níveis de resolução.",falta fazer
+tópico 5,"Técnicas de agrupamento: Agrupamento por partição, por densidade e hierárquico","Questão:
+A análise de clusters ou agrupamento é uma técnica de aprendizagem de máquina não supervisionada utilizada para identificar grupos (clusters) de pontos de dados similares em um dataset. Existem várias abordagens de agrupamento, sendo as mais comuns o agrupamento por partição, por densidade e hierárquico. Com base nas características destas técnicas, analise as afirmações a seguir e assinale a opção correta:
+
+I. O método de agrupamento por partição, como o K-means, aloca cada ponto de dado em exatamente um cluster, minimizando a variação intracluster e maximizando a variação intercluster.
+
+II. O método de agrupamento por densidade, como o DBSCAN (Density-Based Spatial Clustering of Applications with Noise), identifica áreas de alta densidade que são separadas por áreas de baixa densidade e é especialmente útil para identificar outliers ou ruídos.
+
+III. O método de agrupamento hierárquico pode ser executado de forma aglomerativa, onde cada ponto de dado começa como seu próprio cluster e pares de clusters são fundidos à medida que sobem na hierarquia, ou de forma divisiva, onde todos os pontos começam em um único cluster que é progressivamente dividido.
+
+Estão corretas as afirmações:
+
+A) I e II, apenas.
+B) II e III, apenas.
+C) I e III, apenas.
+D) I, II e III.
+E) Nenhuma das afirmações é correta.
+
+",D,"
+
+Breve explicação dos itens:
+
+I. Correta. O método de agrupamento por partição, como o K-means, é um dos métodos mais conhecidos e utilizados. Ele se baseia no princípio de minimizar a soma das distâncias quadradas dos pontos de dados para o centroide do seu respectivo cluster.
+
+II. Correta. O DBSCAN é um método de agrupamento por densidade que não requer a especificação do número de clusters a priori. Ele pode identificar clusters de formas arbitrárias e é robusto para outliers, classificando-os como pontos de ruído.
+
+III. Correta. O agrupamento hierárquico pode ser tanto aglomerativo quanto divisivo, o que lhe dá flexibilidade e permite a criação de um dendrograma que mostra as relações de agrupamento em diferentes níveis de granularidade. Este método não depende da inicialização e pode revelar hierarquias e estruturas de clusters em diferentes níveis de resolução.",falta fazer
+tópico 5,"Técnicas de agrupamento: Agrupamento por partição, por densidade e hierárquico","Questão:
+A análise de clusters ou agrupamento é uma técnica de aprendizagem de máquina não supervisionada utilizada para identificar grupos (clusters) de pontos de dados similares em um dataset. Existem várias abordagens de agrupamento, sendo as mais comuns o agrupamento por partição, por densidade e hierárquico. Com base nas características destas técnicas, analise as afirmações a seguir e assinale a opção correta:
+
+I. O método de agrupamento por partição, como o K-means, aloca cada ponto de dado em exatamente um cluster, minimizando a variação intracluster e maximizando a variação intercluster.
+
+II. O método de agrupamento por densidade, como o DBSCAN (Density-Based Spatial Clustering of Applications with Noise), identifica áreas de alta densidade que são separadas por áreas de baixa densidade e é especialmente útil para identificar outliers ou ruídos.
+
+III. O método de agrupamento hierárquico pode ser executado de forma aglomerativa, onde cada ponto de dado começa como seu próprio cluster e pares de clusters são fundidos à medida que sobem na hierarquia, ou de forma divisiva, onde todos os pontos começam em um único cluster que é progressivamente dividido.
+
+Estão corretas as afirmações:
+
+A) I e II, apenas.
+B) II e III, apenas.
+C) I e III, apenas.
+D) I, II e III.
+E) Nenhuma das afirmações é correta.
+
+",D,"
+
+Breve explicação dos itens:
+
+I. Correta. O método de agrupamento por partição, como o K-means, é um dos métodos mais conhecidos e utilizados. Ele se baseia no princípio de minimizar a soma das distâncias quadradas dos pontos de dados para o centroide do seu respectivo cluster.
+
+II. Correta. O DBSCAN é um método de agrupamento por densidade que não requer a especificação do número de clusters a priori. Ele pode identificar clusters de formas arbitrárias e é robusto para outliers, classificando-os como pontos de ruído.
+
+III. Correta. O agrupamento hierárquico pode ser tanto aglomerativo quanto divisivo, o que lhe dá flexibilidade e permite a criação de um dendrograma que mostra as relações de agrupamento em diferentes níveis de granularidade. Este método não depende da inicialização e pode revelar hierarquias e estruturas de clusters em diferentes níveis de resolução.",D

@@ -1,0 +1,28 @@
+Inteligência Artificial e arte: como as máquinas estão se tornando criativas
+
+Na última década, a empresa OpenAI lançou um aplicativo capaz de gerar imagens,
+dado uma descrição feita por um usuário. Os resultados apresentados foram 
+surpreendentes, de modo que, debates sobre o processo criativo e impactos
+de algoritmos de Inteligência Artificial (IA), no mundo artístico, foram 
+levantados em diversos pontos do planeta.
+
+Ao analisar o modo que uma IA cria imagens fidedignas ou desenhos elaborados, 
+é necessári entender que o resultado desse processo é fruto de um treinamento
+baseado no comportamento humano. O professor John McCarthy, docente na 
+Universidade de Stanford, explica que esses algoritmos são performáticos
+devido a sua natureza em tentar se assemlhar nas ações humanas.
+
+Portanto, do ponto de vista criativo, é incapaz que uma máquina supere o homem,
+devido a sua dependência do mesmo para a criação das imagens e desenhos.
+
+Entretanto, a forma como se produz arte mudou, pois algoritmos como o 
+Dall-e, criado pela empresa OpenAI, permitem a rápida criação de ideias
+em algo concreto, onde anteriormente existia a necessidade de o artista,
+além do processo criativo, a habilidade técnica em se passar as ideias
+para o papel ou quadro.
+
+Logo, a Inteligência Artificial busca potencializar o meio artístico, devido
+as suas técnicas que permitem a rápida e elaborada execução de ideias.
+Algoritmos, as vezes por meio de um breve texto, são capazes de gerar desenhos
+realistas, permitindo então que, qualquer pessoa com acesso a esses aplicativos,
+se tornem artistas amadores, criando assim algum tipo de obra de arte.

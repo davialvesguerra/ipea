@@ -1,0 +1,30 @@
+O uso da inteligência artificial no planejamento urbano
+e gestão de cidades
+
+As dificuldades envolvendo o planejamento urbano e sua 
+gestão são problemas presentes desde o século XVIII, de
+acordo com o professor Leonardo Secchi em seu livro
+"Políticas Públicas". Nesse contexto, esses desafios
+podem ser contornados com o uso de Inteligência Artificial
+(IA), que pode facilitar a identificação de problemas,
+priorizá-los e até mesmo sugerir formas de atuação.
+
+Partindo dessa problemática, é necessário, para um planejamento
+ocorrer corretamente, que se identifique os problemas que ali
+serão enfrentados. E eles têm sido relatados pela população
+com certa frequência em redes sociais, como o Twitter e o Instagram.
+Com isso, é possível utilizar algoritmos de IA que capturam essas informações,
+e que façam a correta rotulação desses problemas.
+
+Entretanto, apenas um passo foi dado na resolução do planejamento urbano, pois
+foi listado apenas os problemas, sem de fato realizar a priorização dos mesmos.
+E para isso, existem técnicas como o K-Means, que conseguem agrupar os assuntos
+semelhantes entre si, permitindo uma visão mais simplificada dos problemas, 
+auxiliando então o profissional a escolher uma solução que consiga ter resultados
+sobre mais de um problema.
+
+Portanto, existem técnicas de Inteligência Artificial que conseguem facilitar
+o trabalho do planejamento urbano, auxiliando o profissional da área a tomar as
+melhores decisões, pois, por meio de técnicas de agrupamento dos dados, rotulação e 
+priorização dos problemas, é possível agilizar e otimizar o processo de gestão 
+das cidades.

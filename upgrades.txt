@@ -1,0 +1,11 @@
+#criar uma base de dados para armazenar as informações
+#na base de dados ter as informações:
+  - tema envolvido;
+  - sub tema envolvido;
+  - questão;
+  - resposta do GPT
+  - resposta do Usuário
+  
+#separar em diferentes colunas as perguntas das respostas GPT
+#guardar a resposta do usuário
+#identificar os temas em que o usuário está errando mais

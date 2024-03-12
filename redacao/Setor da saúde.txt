@@ -1,0 +1,23 @@
+Como a inteligência artificial está transformando o setor da saúde
+
+
+A utilização em massa de tecnologias que usam 
+inteligência artificial têm dominado o mundo, principalmente
+na área da saúde. Diversos campos como oncologia e genética tê sido
+transformados e evoluído por causa dessa nova maneira de se trabalhar.
+
+Inteligência artificial, ou I.A., é um ramo da ciência que tem como objetivo
+simular o comportamento humano. E essa simulação tem tido resultados expressivos
+na área da saúde, devido a sua qualidade obtida nas diversas atividades na qual 
+ela foi proposta.
+
+Um exemplo disso é a detecção de um tumor malígno, onde algoritmos que usam
+a técnica C.N.N (Convolutional Neural Network) são capazes de realizar 
+essas atividade com uma acurácia próxima a de médicos especialistas.
+Também existem algoritmos capazes de replicar o código genético, conseguindo
+criar remédios e vacinas para certos problemas.
+
+Os resultados em se utilizar a inteligência artificial na área da saúde são 
+promissores. Técnicas que auxiliam médicos em suas decisões clínicas
+têm aumentado a eficácia de seus tratamentos, permitindo uma 
+melhor qualidade de vida para o homem.

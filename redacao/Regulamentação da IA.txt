@@ -1,0 +1,34 @@
+
+
+Em 2023, foi elaborada a Lei Nº 2338/2023, com o intuito
+de regulamentar o uso de Inteligência Artificial (IA).
+À medida que esse projeto de lei passa pelos deputados
+e senadores, surge a necessidade de entender o porquê 
+em aprovar esse projeto com o urgência, pois casos 
+como a utilização dos dados dos usuários, ou até 
+mesma a criação de informações falsas, como falas
+e vídeos, tem se tornado recorrente.
+
+Em primeiro lugar, é necessário visualizar como 
+a IA tem pontencial de se tornar extremamente letal
+ao passo que as medidas para combate-la são lentas 
+inexistentes. Yoshua Bengio, um dos pais da Inteligência
+Artificial, explica que para gerar um bom algoritmo é preciso
+de informações. Essas podem ser compreendidas como qualquer
+dado gerado por um usuário, sendo áudios, imagens ou textos.
+
+Com isso, existe o desafio de impedir que empresas usem esses 
+dados sem a permissão do usuário. Um outro fator prejudicial 
+do mau uso da IA é implementação do Deepfake. Esse método
+foi construído com o intuito de gerar informações fictícias,
+mas que tem sido apresentado em cenários que 
+prejudicam a imagem de outra pessoa. Um caso recente desse
+tipo de ataque foi o da cantora Taylor Swift, que teve
+sua imagem usada na criação de cenas pornográficas, sem a 
+devida autorização da mesma.
+
+Portanto, o uso de IA deve ser regulamentado corretamente.
+A criação de leis mais severas para a proteção do usuário,
+ou a devida punição em indivíduos que degradam a privacidade
+do outro, devem ser implementadas com o intuito de tornar
+a sociedade mais justa e correta para todos.

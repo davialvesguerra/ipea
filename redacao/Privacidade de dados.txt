@@ -1,0 +1,35 @@
+Privacidade de dados na era de inteligência artificial
+
+A Lei Geral de Proteção de Dados (LGPD), foi criada
+para proteger o usuário e suas informações pessoais,
+que estão nos diversos meios, físico ou digital.
+Embora essa lei tenha sido promulgada em 2018,
+algoritmos de Inteligência Artificial (IA) acabam
+usando informações não autorizadas desses indivíduos,
+para a criação de diversos produtos, como  sistemas de
+recomendação ou chats virtuais.
+
+Analisando o comportamento de uma IA, o pesquisador
+John McCarthy (1956) elabora o conceito de 
+"algoritmo inteligente" como sendo "aquilo 
+que pensa como um humano ou age como tal". E para
+ocorrer esse funcionamento, esse técnica exige,
+em grande parte de seus métodos, analisar dados reais
+do comportamento humano.
+
+Com isso, os dados se tornaram uma matéria prima para
+os sistemas técnológicos atuais, onde um estudo feito 
+pela empresa PWC apontou que as IAs vão contribuir
+em mais de 15,7 trilhões de doláres no mercado até 2030.
+
+Entretanto, existem empresas que, para conseguir gerar
+algoritmos mais apurados e consequetemente obter um
+maior faturamento, capturam informações sem a devida 
+autorização do usuário, como é o caso de empresas como
+o Instagram, que sugere recomendações aos usuários baseadas
+em falas ou conversas que o aplicativo não poderia ter acesso.
+
+Logo, a privacidade dos dados é um assunto recorrente e,
+tratando-se de IAs, é necessário leis que regulamentem
+esses algoritmos, para que os usuários não tenham suas informações
+expostas de maneira indevida.
